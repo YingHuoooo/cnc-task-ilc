@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.matplotlib-cache/
+results/*.png
+results/*.json
+results/*.csv
+results/*.npz
+results/demo_report.md
+results/effectiveness/

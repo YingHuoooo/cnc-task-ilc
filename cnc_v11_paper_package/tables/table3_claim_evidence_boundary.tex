@@ -1,0 +1,21 @@
+% Requires \usepackage{booktabs,tabularx,array}
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{主张—证据—边界}
+\label{tab:table3_claim_evidence_boundary}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+ID & Claim & Evidence & Boundary & Status \\
+\midrule
+C1 & The frozen V8 dual-anchor configuration improves conflict-task trial efficiency over the frozen error-peak configuration. & V8 formal: +4.272\%, CI [2.438, 6.095], 30/30 wins. & Configuration-level comparison on a frozen virtual taskset and held-out virtual domains; both use two active zones, but selection, zone weighting, and trust/rollback differ, so this is not an isolated scheduler ablation. & supported \\
+C2 & The implemented solver and constraint checks succeed under the tested stresses. & V8–V11 primary-method solver/constraint success rates were 100\%. & Numerical simulation checks only; not physical machine safety certification. & supported \\
+C3 & Added delay is the dominant tested degradation factor. & V10 delay main effect 41.441\%, CI [34.089, 60.074]. & Two-level virtual factorial design; not a continuous physical law. & supported \\
+C4 & V11 residual-delay alignment improves the original dual-anchor method. & The +4/combined-stress gates prespecified and frozen before formal execution passed; all four frozen scenarios had positive observed intervals. & Baseline/+2 are supporting formal scenarios; effective residual lag, not exact physical pure delay. & supported \\
+C5 & Online delay estimation is always better than fixed compensation. & V11 vs fixed +4 intervals cross zero in three scenarios; V12 gate failed. & No universal superiority demonstrated. & not supported \\
+C6 & Fast tracking of drifting delay improves ILC. & V13 vs V11: -0.317\% in slow drift and -0.188\% in switch. & Four updates; 12 nominal control points per axis, endpoint-clamped to 10 active coefficients per axis (20 total). & not supported \\
+C7 & The method improves real machining accuracy or surface quality. & No physical machine or cutting experiment was run. & Pure virtual-plant evidence. & not supported \\
+\bottomrule
+\end{tabularx}
+\end{table*}

@@ -1,0 +1,16 @@
+panel,category,order,item
+b,learner-visible,1,reference
+b,learner-visible,2,feedback
+b,learner-visible,3,task tolerances
+b,learner-visible,4,nominal model
+b,learner-visible,5,trial history
+b,learner-visible,6,constraints
+b,hidden,1,plant parameters
+b,hidden,2,noise-free truth
+b,hidden,3,future delay
+b,learner-output,1,next-trial B-spline command
+c,inherited-principle,1,"task state, not axis error alone"
+c,inherited-principle,2,"sparse critical regions, not equal weighting"
+c,inherited-principle,3,approximate model supplies local direction
+c,inherited-principle,4,repeated-trial feedback corrects mismatch
+c,inherited-principle,5,low-dimensional constrained feedforward update

@@ -1,0 +1,59 @@
+{
+  "primary_method": "learned_auto_eta_1.00",
+  "comparison_design": "paired on identical trajectory-family and virtual-machine domain",
+  "bootstrap_seed": 20260716,
+  "comparisons": {
+    "automatic_eta_0.30": {
+      "comparator": "automatic_eta_0.30",
+      "paired_cases": 30,
+      "median_auc_improvement_percent": 2.3845202609021103,
+      "mean_auc_improvement_percent": 3.8419701004888416,
+      "paired_win_rate": 0.6333333333333333,
+      "bootstrap_median_improvement_95ci_percent": [
+        -0.5382374118992591,
+        4.468453837748733
+      ],
+      "one_sided_wilcoxon_p_proposed_lower": 0.045974813401699066,
+      "median_global_ratio_multiplier": 0.8315571912302036
+    },
+    "automatic_eta_1.00": {
+      "comparator": "automatic_eta_1.00",
+      "paired_cases": 30,
+      "median_auc_improvement_percent": 0.26574440910556413,
+      "mean_auc_improvement_percent": 2.980463653607344,
+      "paired_win_rate": 0.6333333333333333,
+      "bootstrap_median_improvement_95ci_percent": [
+        0.0,
+        0.6483586122972693
+      ],
+      "one_sided_wilcoxon_p_proposed_lower": 0.007894193556128592,
+      "median_global_ratio_multiplier": 1.000731776664244
+    },
+    "error_peak_window": {
+      "comparator": "error_peak_window",
+      "paired_cases": 30,
+      "median_auc_improvement_percent": -1.573224764151739,
+      "mean_auc_improvement_percent": -1.1981943025099786,
+      "paired_win_rate": 0.3,
+      "bootstrap_median_improvement_95ci_percent": [
+        -4.345536795768966,
+        -0.29356084253725234
+      ],
+      "one_sided_wilcoxon_p_proposed_lower": 0.9498013220727444,
+      "median_global_ratio_multiplier": 0.8705582780093365
+    },
+    "full_trajectory": {
+      "comparator": "full_trajectory",
+      "paired_cases": 30,
+      "median_auc_improvement_percent": 3.922113842197109,
+      "mean_auc_improvement_percent": 5.569556810735944,
+      "paired_win_rate": 0.7333333333333333,
+      "bootstrap_median_improvement_95ci_percent": [
+        0.9106496983551557,
+        8.261198779086733
+      ],
+      "one_sided_wilcoxon_p_proposed_lower": 0.0018722163513302803,
+      "median_global_ratio_multiplier": 1.149969397525472
+    }
+  }
+}

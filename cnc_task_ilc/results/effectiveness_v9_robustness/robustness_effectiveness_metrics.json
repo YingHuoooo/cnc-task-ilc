@@ -1,0 +1,122 @@
+{
+  "protocol_sha256": "2c5f54fe53a67f4943a2a83ee21f72d19f846ca3563e788f620e0ee4d4ab804f",
+  "protocol": {
+    "protocol_id": "v9-oat-robustness-boundary",
+    "frozen_before_formal_execution": true,
+    "design": "one-factor-at-a-time with a shared baseline",
+    "true_error_used_for_evaluation": true,
+    "noisy_error_used_for_learning_and_rollback": true,
+    "primary_method": "dual_anchor_dynamic",
+    "primary_scope": "demand_conflict",
+    "primary_comparator": "error_peak_dynamic",
+    "methods": [
+      "full_trajectory",
+      "error_peak_dynamic",
+      "violation_safe",
+      "dual_anchor_dynamic"
+    ],
+    "scenarios": [
+      {
+        "scenario_id": "baseline",
+        "label": "Baseline",
+        "factor": "baseline",
+        "factor_level": 0.0,
+        "measurement_noise_std_mm": 0.0,
+        "extra_delay_steps": 0,
+        "mismatch_scale": 1.0
+      },
+      {
+        "scenario_id": "noise_0p02",
+        "label": "Noise 0.02 mm",
+        "factor": "measurement_noise",
+        "factor_level": 0.02,
+        "measurement_noise_std_mm": 0.02,
+        "extra_delay_steps": 0,
+        "mismatch_scale": 1.0
+      },
+      {
+        "scenario_id": "noise_0p05",
+        "label": "Noise 0.05 mm",
+        "factor": "measurement_noise",
+        "factor_level": 0.05,
+        "measurement_noise_std_mm": 0.05,
+        "extra_delay_steps": 0,
+        "mismatch_scale": 1.0
+      },
+      {
+        "scenario_id": "delay_2",
+        "label": "Added delay 2 steps",
+        "factor": "added_delay",
+        "factor_level": 2.0,
+        "measurement_noise_std_mm": 0.0,
+        "extra_delay_steps": 2,
+        "mismatch_scale": 1.0
+      },
+      {
+        "scenario_id": "delay_4",
+        "label": "Added delay 4 steps",
+        "factor": "added_delay",
+        "factor_level": 4.0,
+        "measurement_noise_std_mm": 0.0,
+        "extra_delay_steps": 4,
+        "mismatch_scale": 1.0
+      },
+      {
+        "scenario_id": "mismatch_1p35",
+        "label": "Mismatch 1.35x",
+        "factor": "dynamic_mismatch",
+        "factor_level": 1.35,
+        "measurement_noise_std_mm": 0.0,
+        "extra_delay_steps": 0,
+        "mismatch_scale": 1.35
+      },
+      {
+        "scenario_id": "mismatch_1p70",
+        "label": "Mismatch 1.70x",
+        "factor": "dynamic_mismatch",
+        "factor_level": 1.7,
+        "measurement_noise_std_mm": 0.0,
+        "extra_delay_steps": 0,
+        "mismatch_scale": 1.7
+      }
+    ],
+    "settings": {
+      "samples": 161,
+      "duration_s": 6.0,
+      "control_points": 12,
+      "iterations": 4,
+      "active_zone_budget": 2,
+      "half_width": 5
+    },
+    "formal_domain_seeds": [
+      1301,
+      1321,
+      1361,
+      1381
+    ],
+    "audit_domain_seeds_excluded": [
+      1231,
+      1249
+    ],
+    "taskset_sha256": "f2838bb56df7382ab7821c2140dbfd203108469ec529049d0b8263c6d05a51b9",
+    "v8_protocol_sha256": "dc4ad7e97ebf49d46f788075876062b4781e43452201eb68dc2256aab88eff38",
+    "audit_summary_sha256": "7037b4e3b465f0d58279a7eec803d2c6b0c3029e911f67b985cd79778c5e8050",
+    "robustness_runner_sha256": "858d57200f9c45caae69d607bd490623f63ecf745720079884125a8cfdebbb0c",
+    "v8_scheduler_sha256": "c553f8556491d53a663583a566f0985972ba00ca7417abf2c936a125acdd7c1a",
+    "bootstrap_seed": 20260729,
+    "robust_effect_rule": {
+      "bootstrap_median_improvement_ci_lower_above_zero": true,
+      "strict_paired_win_rate_at_least": 0.6
+    },
+    "classification_rule": {
+      "broadly_robust_minimum_stress_scenarios": 5,
+      "conditionally_robust_minimum_stress_scenarios": 3,
+      "each_factor_must_retain_at_least_one_nonbaseline_level": true,
+      "per_scenario_solver_and_constraint_success_at_least": 0.95
+    },
+    "formal_method_runs": 1680
+  },
+  "total_method_runs": 1680,
+  "paired_cases_per_scenario_all_tasks": 60,
+  "paired_cases_per_scenario_conflict": 20
+}

@@ -1,0 +1,70 @@
+{
+  "protocol_id": "v8-dual-anchor-frozen-confirmation",
+  "frozen_before_formal_execution": true,
+  "primary_method": "dual_anchor_dynamic",
+  "mechanism": {
+    "task_anchor": "largest tolerance-normalized semantic urgency",
+    "error_anchor": "largest raw zone peak excluding task anchor",
+    "anchor_weighting": "equal critical boost after selection",
+    "safety": "output-space trust limit and rollback"
+  },
+  "primary_scope": "demand_conflict",
+  "primary_comparator": "error_peak_dynamic",
+  "secondary_scope": "all",
+  "secondary_comparator": "full_trajectory",
+  "taskset_sha256": "f2838bb56df7382ab7821c2140dbfd203108469ec529049d0b8263c6d05a51b9",
+  "scheduler_source_sha256": "c553f8556491d53a663583a566f0985972ba00ca7417abf2c936a125acdd7c1a",
+  "development_summary_sha256": "a6e2ba6f4692cbd7157294bd66faa39e31a078cc313014d5e8f05a11187fb5ee",
+  "development_domain_seeds_excluded": [
+    1031,
+    1049,
+    1061
+  ],
+  "v7_audit_domain_seeds_excluded": [
+    733,
+    751,
+    769
+  ],
+  "v7_formal_domain_seeds_excluded": [
+    811,
+    827,
+    853,
+    877,
+    907,
+    929
+  ],
+  "formal_domain_seeds": [
+    1103,
+    1129,
+    1151,
+    1171,
+    1193,
+    1217
+  ],
+  "methods": [
+    "full_trajectory",
+    "static_tolerance",
+    "curvature_zones",
+    "error_peak_dynamic",
+    "violation_dynamic",
+    "violation_safe",
+    "dual_anchor_dynamic",
+    "random_zones"
+  ],
+  "settings": {
+    "samples": 161,
+    "duration_s": 6.0,
+    "control_points": 12,
+    "iterations": 4,
+    "active_zone_budget": 2,
+    "half_width": 5
+  },
+  "bootstrap_seed": 20260723,
+  "criteria": {
+    "conflict_vs_error_peak_bootstrap_ci_lower_above_zero": true,
+    "conflict_vs_error_peak_strict_win_rate_at_least": 0.6,
+    "all_tasks_vs_full_bootstrap_ci_lower_above_zero": true,
+    "paired_global_ratio_multiplier_vs_full_no_more_than": 1.5,
+    "solver_and_constraint_success_rate_at_least": 0.95
+  }
+}

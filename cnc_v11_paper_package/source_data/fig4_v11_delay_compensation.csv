@@ -1,0 +1,17 @@
+stage,scope,comparison,paired_n,median_improvement_percent,ci95_low_percent,ci95_high_percent,win_rate,status
+V11 formal,n0_d0_m0,V11 vs original dual-anchor,20,5.260389,4.097154,6.969422,0.9,frozen supporting positive
+V11 formal,n0_d0_m0,V11 vs fixed +4,20,14.156626,10.488328,24.189005,0.8,frozen supporting positive
+V11 formal,n0_d0_m0,V11 vs error-peak,20,7.715095,6.239056,10.606731,0.95,frozen supporting positive
+V11 formal,n0_d0_m0,V11 vs full-trajectory (all tasks),60,10.733227,8.613386,12.950233,0.966667,frozen supporting positive
+V11 formal,delay_2,V11 vs original dual-anchor,20,6.243236,4.796784,6.968191,1.0,frozen supporting positive
+V11 formal,delay_2,V11 vs fixed +4,20,10.527608,-0.935226,12.748683,0.65,unresolved
+V11 formal,delay_2,V11 vs error-peak,20,8.492659,6.967274,10.167782,1.0,frozen supporting positive
+V11 formal,delay_2,V11 vs full-trajectory (all tasks),60,8.681794,6.193276,12.661958,0.95,frozen supporting positive
+V11 formal,n0_d1_m0,V11 vs original dual-anchor,20,4.615799,1.843677,8.189744,0.9,prespecified confirmatory
+V11 formal,n0_d1_m0,V11 vs fixed +4,20,5.829237,-0.760555,6.608162,0.65,unresolved
+V11 formal,n0_d1_m0,V11 vs error-peak,20,4.948386,3.383696,9.134293,0.9,frozen supporting positive
+V11 formal,n0_d1_m0,V11 vs full-trajectory (all tasks),60,4.668749,3.661934,6.148862,0.883333,prespecified confirmatory
+V11 formal,n1_d1_m1,V11 vs original dual-anchor,20,6.765553,4.704879,9.558261,0.9,prespecified confirmatory
+V11 formal,n1_d1_m1,V11 vs fixed +4,20,2.306612,-2.553094,3.078301,0.6,unresolved
+V11 formal,n1_d1_m1,V11 vs error-peak,20,6.930393,3.772536,8.55703,0.85,frozen supporting positive
+V11 formal,n1_d1_m1,V11 vs full-trajectory (all tasks),60,5.448027,3.852877,7.064646,0.9,prespecified confirmatory

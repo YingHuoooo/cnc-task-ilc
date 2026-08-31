@@ -1,0 +1,96 @@
+{
+  "stage": "v12_unknown_delay_development_only",
+  "development_domain_seeds": [
+    1709,
+    1723,
+    1741
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "unknown_static_0_8",
+      "label": "Unknown static axis delay in [0, 8] steps",
+      "mode": "static",
+      "maximum_extra_delay_steps": 8,
+      "drift_span_steps": 2
+    },
+    {
+      "scenario_id": "unknown_drift_pm2",
+      "label": "Unknown axis delay with slow +/-2-step trial drift",
+      "mode": "drift",
+      "maximum_extra_delay_steps": 8,
+      "drift_span_steps": 2
+    }
+  ],
+  "methods": [
+    "dual_anchor_dynamic",
+    "fixed_delay_2",
+    "fixed_delay_4",
+    "fixed_delay_6",
+    "delay_aware_dual_anchor",
+    "oracle_true_delay_0p25"
+  ],
+  "fixed_candidate_median_auc": {
+    "fixed_delay_2": 0.5137608054425958,
+    "fixed_delay_4": 0.5538696810471434,
+    "fixed_delay_6": 0.6204620590678014
+  },
+  "fixed_selection_rule": "lowest pooled median conflict-task AUC across both development scenarios",
+  "selected_best_fixed_method": "fixed_delay_2",
+  "comparisons": {
+    "unknown_static_0_8": {
+      "scenario_id": "unknown_static_0_8",
+      "proposed": "delay_aware_dual_anchor",
+      "comparator": "fixed_delay_2",
+      "paired_cases": 15,
+      "median_task_auc_improvement_percent": 0.369445123003437,
+      "mean_task_auc_improvement_percent": -0.32095669354838813,
+      "strict_win_rate": 0.6666666666666666,
+      "tie_rate": 0.0
+    },
+    "unknown_drift_pm2": {
+      "scenario_id": "unknown_drift_pm2",
+      "proposed": "delay_aware_dual_anchor",
+      "comparator": "fixed_delay_2",
+      "paired_cases": 15,
+      "median_task_auc_improvement_percent": -0.25929606929721016,
+      "mean_task_auc_improvement_percent": -0.15502741335676695,
+      "strict_win_rate": 0.4666666666666667,
+      "tie_rate": 0.0
+    }
+  },
+  "oracle_gap_diagnostics": {
+    "unknown_static_0_8": {
+      "scenario_id": "unknown_static_0_8",
+      "paired_cases": 15,
+      "median_online_excess_auc_over_oracle_percent": -0.49826854530948333,
+      "mean_online_excess_auc_over_oracle_percent": -0.14248349442840752,
+      "online_no_worse_than_oracle_rate": 0.7333333333333333
+    },
+    "unknown_drift_pm2": {
+      "scenario_id": "unknown_drift_pm2",
+      "paired_cases": 15,
+      "median_online_excess_auc_over_oracle_percent": 0.37449199474635947,
+      "mean_online_excess_auc_over_oracle_percent": 0.2780711535318835,
+      "online_no_worse_than_oracle_rate": 0.4
+    }
+  },
+  "primary_success_rate": 1.0,
+  "median_axis_lag_absolute_error_steps": 1.0,
+  "screening_thresholds": {
+    "each_scenario_median_improvement_vs_best_fixed_above_percent": 0.0,
+    "each_scenario_win_rate_vs_best_fixed_at_least": 0.6,
+    "median_axis_lag_absolute_error_at_most_steps": 1.0,
+    "median_excess_auc_over_oracle_at_most_percent": 10.0,
+    "solver_and_constraint_success_rate_at_least": 0.95
+  },
+  "criteria": {
+    "each_scenario_median_improvement_vs_best_fixed_above_zero": false,
+    "each_scenario_win_rate_vs_best_fixed_at_least_60_percent": false,
+    "median_axis_lag_error_at_most_one_step": true,
+    "worst_median_oracle_excess_at_most_ten_percent": true,
+    "success_rate_at_least_95_percent": true
+  },
+  "passed": false,
+  "decision": "STOP_AND_REPORT",
+  "total_method_runs": 180
+}

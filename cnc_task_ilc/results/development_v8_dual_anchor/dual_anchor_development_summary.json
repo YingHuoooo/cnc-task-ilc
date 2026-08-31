@@ -1,0 +1,74 @@
+{
+  "stage": "development_only",
+  "development_domain_seeds": [
+    1031,
+    1049,
+    1061
+  ],
+  "methods": [
+    "full_trajectory",
+    "error_peak_dynamic",
+    "violation_dynamic",
+    "violation_safe",
+    "dual_anchor_dynamic"
+  ],
+  "task_regimes": [
+    "neutral",
+    "demand_aligned",
+    "demand_conflict"
+  ],
+  "screening_thresholds": {
+    "conflict_vs_error_peak_median_improvement_above_zero": 0.0,
+    "conflict_vs_error_peak_win_rate_at_least": 0.6,
+    "all_tasks_vs_full_median_improvement_above_zero": 0.0,
+    "solver_and_constraint_success_rate_at_least": 0.95
+  },
+  "comparisons": {
+    "conflict_vs_error_peak": {
+      "scope": "demand_conflict",
+      "comparator": "error_peak_dynamic",
+      "paired_cases": 15,
+      "median_task_auc_improvement_percent": 2.9206814745710563,
+      "mean_task_auc_improvement_percent": 2.0268607497827356,
+      "strict_win_rate": 0.9333333333333333,
+      "tie_rate": 0.0
+    },
+    "all_vs_full": {
+      "scope": "all",
+      "comparator": "full_trajectory",
+      "paired_cases": 45,
+      "median_task_auc_improvement_percent": 5.562198075864367,
+      "mean_task_auc_improvement_percent": 6.862427933061849,
+      "strict_win_rate": 0.8666666666666667,
+      "tie_rate": 0.0
+    },
+    "all_vs_plain_violation": {
+      "scope": "all",
+      "comparator": "violation_dynamic",
+      "paired_cases": 45,
+      "median_task_auc_improvement_percent": 0.29028735712914927,
+      "mean_task_auc_improvement_percent": 1.5179967939918075,
+      "strict_win_rate": 0.6,
+      "tie_rate": 0.1111111111111111
+    },
+    "all_vs_safe_violation": {
+      "scope": "all",
+      "comparator": "violation_safe",
+      "paired_cases": 45,
+      "median_task_auc_improvement_percent": 0.29028735712914927,
+      "mean_task_auc_improvement_percent": 1.5179967939918075,
+      "strict_win_rate": 0.6,
+      "tie_rate": 0.1111111111111111
+    }
+  },
+  "primary_success_rate": 1.0,
+  "criteria": {
+    "conflict_vs_error_peak_median_improvement_above_zero": true,
+    "conflict_vs_error_peak_win_rate_at_least_60_percent": true,
+    "all_tasks_vs_full_median_improvement_above_zero": true,
+    "success_rate_at_least_95_percent": true
+  },
+  "passed": true,
+  "decision": "FREEZE_AND_CONFIRM",
+  "total_method_runs": 225
+}

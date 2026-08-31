@@ -1,0 +1,220 @@
+{
+  "final_method": "delay_aware_dual_anchor (V11)",
+  "linuxcnc_in_scope": false,
+  "evidence_scope": "two-axis numerical virtual CNC machine-tool plant",
+  "formal_stages": [
+    "V8",
+    "V9",
+    "V10",
+    "V11"
+  ],
+  "development_only_stages": [
+    "V12",
+    "V13"
+  ],
+  "source_data_files": [
+    "fig1_context_and_principles.csv",
+    "fig1_pipeline_modules.csv",
+    "fig2_v8_effectiveness.csv",
+    "fig2_v8_gate_metrics.csv",
+    "fig3_v10_factorial.csv",
+    "fig3_v9_robustness.csv",
+    "fig4_v11_delay_compensation.csv",
+    "fig4_v11_diagnostics.csv",
+    "fig5_development_decisions.csv",
+    "fig5_v12_v13_boundaries.csv"
+  ],
+  "experiment_overview": [
+    {
+      "Stage": "V8",
+      "Role": "Formal effectiveness",
+      "Design": "15 tasks × 6 domains × 8 methods",
+      "Runs": 720,
+      "Decision": "PASS"
+    },
+    {
+      "Stage": "V9",
+      "Role": "One-factor robustness",
+      "Design": "15 tasks × 4 domains × 7 scenarios × 4 methods",
+      "Runs": 1680,
+      "Decision": "BROADLY_ROBUST"
+    },
+    {
+      "Stage": "V10",
+      "Role": "2×2×2 factorial diagnosis",
+      "Design": "15 tasks × 4 domains × 8 cells × 4 methods",
+      "Runs": 1920,
+      "Decision": "COMBINED_ADVANTAGE_UNRESOLVED"
+    },
+    {
+      "Stage": "V11",
+      "Role": "Formal delay compensation",
+      "Design": "15 tasks × 4 domains × 4 scenarios × 5 methods",
+      "Runs": 1200,
+      "Decision": "DELAY_COMPENSATION_CONFIRMED"
+    },
+    {
+      "Stage": "V12",
+      "Role": "Unknown/drifting-delay development",
+      "Design": "5 conflict tasks × 3 domains × 2 scenarios × 6 methods",
+      "Runs": 180,
+      "Decision": "STOP; no formal run"
+    },
+    {
+      "Stage": "V13",
+      "Role": "Fast-adaptation development",
+      "Design": "5 conflict tasks × 4 domains × 3 scenarios × 5 methods",
+      "Runs": 300,
+      "Decision": "STOP; final method V11"
+    }
+  ],
+  "key_results": [
+    {
+      "Claim": "V8 dual-anchor vs error peak, conflict tasks",
+      "n": 30,
+      "Median improvement": "4.272%",
+      "95% CI": "[2.438, 6.095]%",
+      "Win rate": "100%",
+      "Status": "formal primary confirmed"
+    },
+    {
+      "Claim": "V8 dual-anchor vs full trajectory, all tasks",
+      "n": 90,
+      "Median improvement": "6.718%",
+      "95% CI": "[5.908, 8.657]%",
+      "Win rate": "86.7%",
+      "Status": "formal secondary confirmed"
+    },
+    {
+      "Claim": "V10 triple stress vs error peak",
+      "n": 20,
+      "Median improvement": "0.266%",
+      "95% CI": "[-0.537, 1.786]%",
+      "Win rate": "65%",
+      "Status": "unresolved"
+    },
+    {
+      "Claim": "V10 delay main effect on dual-anchor AUC",
+      "n": 20,
+      "Median improvement": "41.441% degradation",
+      "95% CI": "[34.089, 60.074]%",
+      "Win rate": "—",
+      "Status": "dominant factor"
+    },
+    {
+      "Claim": "V10 mismatch main effect on dual-anchor AUC",
+      "n": 20,
+      "Median improvement": "-1.676% (favorable direction)",
+      "95% CI": "[-3.861, -0.012]%",
+      "Win rate": "—",
+      "Status": "non-monotone factor"
+    },
+    {
+      "Claim": "V11 vs original dual-anchor, baseline",
+      "n": 20,
+      "Median improvement": "5.260%",
+      "95% CI": "[4.097, 6.969]%",
+      "Win rate": "90%",
+      "Status": "frozen supporting positive"
+    },
+    {
+      "Claim": "V11 vs original dual-anchor, delay +2",
+      "n": 20,
+      "Median improvement": "6.243%",
+      "95% CI": "[4.797, 6.968]%",
+      "Win rate": "100%",
+      "Status": "frozen supporting positive"
+    },
+    {
+      "Claim": "V11 vs original dual-anchor, delay +4",
+      "n": 20,
+      "Median improvement": "4.616%",
+      "95% CI": "[1.844, 8.190]%",
+      "Win rate": "90%",
+      "Status": "prespecified confirmatory"
+    },
+    {
+      "Claim": "V11 vs original dual-anchor, triple stress",
+      "n": 20,
+      "Median improvement": "6.766%",
+      "95% CI": "[4.705, 9.558]%",
+      "Win rate": "90%",
+      "Status": "prespecified confirmatory"
+    },
+    {
+      "Claim": "V12 online vs fixed +2, drift",
+      "n": 15,
+      "Median improvement": "-0.259%",
+      "95% CI": "[-1.210, 1.619]%",
+      "Win rate": "46.7%",
+      "Status": "development gate failed"
+    },
+    {
+      "Claim": "V13 rolling vs V11, slow drift",
+      "n": 20,
+      "Median improvement": "-0.317%",
+      "95% CI": "[-0.885, 0.856]%",
+      "Win rate": "45%",
+      "Status": "development gate failed"
+    },
+    {
+      "Claim": "V13 rolling vs V11, switch",
+      "n": 20,
+      "Median improvement": "-0.188%",
+      "95% CI": "[-0.490, 0.014]%",
+      "Win rate": "30%",
+      "Status": "development gate failed"
+    }
+  ],
+  "claims": [
+    {
+      "ID": "C1",
+      "Claim": "The frozen V8 dual-anchor configuration improves conflict-task trial efficiency over the frozen error-peak configuration.",
+      "Evidence": "V8 formal: +4.272%, CI [2.438, 6.095], 30/30 wins.",
+      "Boundary": "Configuration-level comparison on a frozen virtual taskset and held-out virtual domains; both use two active zones, but selection, zone weighting, and trust/rollback differ, so this is not an isolated scheduler ablation.",
+      "Status": "supported"
+    },
+    {
+      "ID": "C2",
+      "Claim": "The implemented solver and constraint checks succeed under the tested stresses.",
+      "Evidence": "V8–V11 primary-method solver/constraint success rates were 100%.",
+      "Boundary": "Numerical simulation checks only; not physical machine safety certification.",
+      "Status": "supported"
+    },
+    {
+      "ID": "C3",
+      "Claim": "Added delay is the dominant tested degradation factor.",
+      "Evidence": "V10 delay main effect 41.441%, CI [34.089, 60.074].",
+      "Boundary": "Two-level virtual factorial design; not a continuous physical law.",
+      "Status": "supported"
+    },
+    {
+      "ID": "C4",
+      "Claim": "V11 residual-delay alignment improves the original dual-anchor method.",
+      "Evidence": "The +4/combined-stress gates prespecified and frozen before formal execution passed; all four frozen scenarios had positive observed intervals.",
+      "Boundary": "Baseline/+2 are supporting formal scenarios; effective residual lag, not exact physical pure delay.",
+      "Status": "supported"
+    },
+    {
+      "ID": "C5",
+      "Claim": "Online delay estimation is always better than fixed compensation.",
+      "Evidence": "V11 vs fixed +4 intervals cross zero in three scenarios; V12 gate failed.",
+      "Boundary": "No universal superiority demonstrated.",
+      "Status": "not supported"
+    },
+    {
+      "ID": "C6",
+      "Claim": "Fast tracking of drifting delay improves ILC.",
+      "Evidence": "V13 vs V11: -0.317% in slow drift and -0.188% in switch.",
+      "Boundary": "Four updates; 12 nominal control points per axis, endpoint-clamped to 10 active coefficients per axis (20 total).",
+      "Status": "not supported"
+    },
+    {
+      "ID": "C7",
+      "Claim": "The method improves real machining accuracy or surface quality.",
+      "Evidence": "No physical machine or cutting experiment was run.",
+      "Boundary": "Pure virtual-plant evidence.",
+      "Status": "not supported"
+    }
+  ]
+}

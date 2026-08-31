@@ -1,0 +1,5 @@
+panel,metric,value,unit,threshold
+b,primary_win_rate,1.0,fraction,0.6
+b,all_task_win_rate,0.8666666666666667,fraction,0.6
+b,primary_success_rate,1.0,fraction,0.95
+b,global_rmse_multiplier_vs_full,1.2518831643648864,ratio,1.5

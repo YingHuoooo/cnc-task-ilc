@@ -1,0 +1,189 @@
+{
+  "protocol_id": "v11-additional-five-priority-numerical-experiments",
+  "frozen_before_execution_on": "2026-08-20",
+  "scope": "numerical virtual CNC machine-tool models only",
+  "linuxcnc_executed": false,
+  "physical_machine_executed": false,
+  "original_v8_v13_results_modified": false,
+  "settings": {
+    "samples": 161,
+    "duration_s": 6.0,
+    "updates": 4,
+    "nominal_control_points_per_axis": 12,
+    "active_coefficients_per_axis": 10,
+    "matched_active_zone_budget": 2,
+    "default_residual_delay_gain": 0.25,
+    "scenarios": [
+      {
+        "scenario_id": "n0_d0_m0",
+        "label": "Baseline",
+        "factor": "factorial_combination",
+        "factor_level": 0.0,
+        "measurement_noise_std_mm": 0.0,
+        "extra_delay_steps": 0,
+        "mismatch_scale": 1.0
+      },
+      {
+        "scenario_id": "n0_d1_m0",
+        "label": "D=+4",
+        "factor": "factorial_combination",
+        "factor_level": 1.0,
+        "measurement_noise_std_mm": 0.0,
+        "extra_delay_steps": 4,
+        "mismatch_scale": 1.0
+      },
+      {
+        "scenario_id": "n1_d1_m1",
+        "label": "N=0.05 mm + D=+4 + M=1.70x",
+        "factor": "factorial_combination",
+        "factor_level": 3.0,
+        "measurement_noise_std_mm": 0.05,
+        "extra_delay_steps": 4,
+        "mismatch_scale": 1.7
+      }
+    ]
+  },
+  "priority_1": {
+    "purpose": "matched module ablation",
+    "methods": [
+      "v11_full",
+      "no_residual_alignment",
+      "task_top2",
+      "raw_top2",
+      "uniform_full_trajectory"
+    ],
+    "new_domain_seeds": [
+      24001,
+      24002,
+      24003,
+      24004,
+      24005,
+      24006,
+      24007,
+      24008
+    ],
+    "tasks": 15,
+    "job_count": 1800
+  },
+  "priority_2": {
+    "purpose": "paired, domain and hierarchical bootstrap",
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20260820
+  },
+  "priority_3": {
+    "purpose": "one-factor-at-a-time parameter sensitivity",
+    "development_seeds": [
+      25001,
+      25002,
+      25003,
+      25004,
+      25005,
+      25006
+    ],
+    "configurations": [
+      {
+        "config_id": "gamma_0p0",
+        "config_group": "residual_delay_shrinkage",
+        "config_value": 0.0,
+        "compensation_gain": 0.0
+      },
+      {
+        "config_id": "gamma_0p1",
+        "config_group": "residual_delay_shrinkage",
+        "config_value": 0.1,
+        "compensation_gain": 0.1
+      },
+      {
+        "config_id": "gamma_0p25",
+        "config_group": "residual_delay_shrinkage",
+        "config_value": 0.25,
+        "compensation_gain": 0.25
+      },
+      {
+        "config_id": "gamma_0p4",
+        "config_group": "residual_delay_shrinkage",
+        "config_value": 0.4,
+        "compensation_gain": 0.4
+      },
+      {
+        "config_id": "gamma_0p6",
+        "config_group": "residual_delay_shrinkage",
+        "config_value": 0.6,
+        "compensation_gain": 0.6
+      },
+      {
+        "config_id": "gamma_1p0",
+        "config_group": "residual_delay_shrinkage",
+        "config_value": 1.0,
+        "compensation_gain": 1.0
+      },
+      {
+        "config_id": "smoothing_3",
+        "config_group": "smoothing_window",
+        "config_value": 3,
+        "smoothing_window": 3
+      },
+      {
+        "config_id": "smoothing_7",
+        "config_group": "smoothing_window",
+        "config_value": 7,
+        "smoothing_window": 7
+      },
+      {
+        "config_id": "smoothing_9",
+        "config_group": "smoothing_window",
+        "config_value": 9,
+        "smoothing_window": 9
+      },
+      {
+        "config_id": "control_points_8",
+        "config_group": "nominal_control_points",
+        "config_value": 8,
+        "control_points": 8
+      },
+      {
+        "config_id": "control_points_16",
+        "config_group": "nominal_control_points",
+        "config_value": 16,
+        "control_points": 16
+      },
+      {
+        "config_id": "learning_rate_0p5",
+        "config_group": "learning_rate",
+        "config_value": 0.5,
+        "learning_rate": 0.5
+      },
+      {
+        "config_id": "learning_rate_0p8",
+        "config_group": "learning_rate",
+        "config_value": 0.8,
+        "learning_rate": 0.8
+      }
+    ],
+    "job_count": 780
+  },
+  "priority_4": {
+    "purpose": "representative full-trace replay",
+    "selection_rule": "delay+4 demand-conflict pair whose V11-vs-no-alignment improvement is closest to the median"
+  },
+  "priority_5": {
+    "purpose": "held-out LHS plant family and edge challenges",
+    "lhs_seed": 20260820,
+    "held_out_lhs_plants": 24,
+    "edge_challenge_plants": 6,
+    "methods": [
+      "v11_full",
+      "no_residual_alignment",
+      "raw_top2",
+      "uniform_full_trajectory"
+    ],
+    "job_count": 1800
+  },
+  "code_sha256": {
+    "experiment_core.py": "35b2f4154c8314696c0f41984dff515e3a83e08cee6cf9f1287e826fcedea801",
+    "run_experiments.py": "998bba5f11e48f7c1b2ca6be98b47fdc2d3c1c82e5dcd967867f7469ba2016b0",
+    "source_delay_runner.py": "98ae8515b051ab77370b3bd3c6d85a63bc61c8edae0ef25e434b6462d078520f",
+    "source_semantic_runner.py": "c553f8556491d53a663583a566f0985972ba00ca7417abf2c936a125acdd7c1a",
+    "task_manifests.json": "f2838bb56df7382ab7821c2140dbfd203108469ec529049d0b8263c6d05a51b9"
+  }
+}

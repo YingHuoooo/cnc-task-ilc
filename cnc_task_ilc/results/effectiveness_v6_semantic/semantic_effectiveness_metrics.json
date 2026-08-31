@@ -1,0 +1,520 @@
+{
+  "settings": {
+    "trajectories": [
+      "harmonic_loop",
+      "ellipse",
+      "rounded_square",
+      "figure_eight",
+      "s_curve"
+    ],
+    "domain_seeds": [
+      631,
+      647,
+      659,
+      677,
+      691,
+      709
+    ],
+    "samples": 161,
+    "iterations": 4,
+    "zone_budget": 2,
+    "task_zones_per_trajectory": 6,
+    "total_method_runs": 240,
+    "task_state": "zone RMS + peak + local ripple normalized by tolerance; primary score is 50% zone RMS and 50% worst-zone ratio"
+  },
+  "task_specifications": {
+    "harmonic_loop": {
+      "zone_names": [
+        "entry_datum",
+        "motion_transition",
+        "functional_extreme",
+        "curvature_feature",
+        "blend_transition",
+        "exit_datum"
+      ],
+      "zone_roles": [
+        "entry_datum",
+        "motion_transition",
+        "functional_extreme",
+        "curvature_feature",
+        "blend_transition",
+        "exit_datum"
+      ],
+      "zone_centers": [
+        11,
+        60,
+        73,
+        92,
+        124,
+        149
+      ],
+      "zone_windows": [
+        [
+          6,
+          16
+        ],
+        [
+          55,
+          65
+        ],
+        [
+          68,
+          78
+        ],
+        [
+          87,
+          97
+        ],
+        [
+          119,
+          129
+        ],
+        [
+          144,
+          154
+        ]
+      ],
+      "zone_tolerances_mm": [
+        0.28,
+        0.25,
+        0.18,
+        0.2,
+        0.23,
+        0.3
+      ],
+      "generation_rules": [
+        "program entry datum",
+        "maximum programmed jerk",
+        "maximum programmed radial extent",
+        "maximum programmed curvature",
+        "maximum programmed curvature change",
+        "program exit datum"
+      ]
+    },
+    "ellipse": {
+      "zone_names": [
+        "entry_datum",
+        "curvature_feature",
+        "motion_transition",
+        "functional_extreme",
+        "blend_transition",
+        "exit_datum"
+      ],
+      "zone_roles": [
+        "entry_datum",
+        "curvature_feature",
+        "motion_transition",
+        "functional_extreme",
+        "blend_transition",
+        "exit_datum"
+      ],
+      "zone_centers": [
+        11,
+        24,
+        62,
+        80,
+        93,
+        149
+      ],
+      "zone_windows": [
+        [
+          6,
+          16
+        ],
+        [
+          19,
+          29
+        ],
+        [
+          57,
+          67
+        ],
+        [
+          75,
+          85
+        ],
+        [
+          88,
+          98
+        ],
+        [
+          144,
+          154
+        ]
+      ],
+      "zone_tolerances_mm": [
+        0.28,
+        0.2,
+        0.25,
+        0.18,
+        0.23,
+        0.3
+      ],
+      "generation_rules": [
+        "program entry datum",
+        "maximum programmed curvature",
+        "maximum programmed jerk",
+        "maximum programmed radial extent",
+        "maximum programmed curvature change",
+        "program exit datum"
+      ]
+    },
+    "rounded_square": {
+      "zone_names": [
+        "entry_datum",
+        "blend_transition",
+        "functional_extreme",
+        "motion_transition",
+        "curvature_feature",
+        "exit_datum"
+      ],
+      "zone_roles": [
+        "entry_datum",
+        "blend_transition",
+        "functional_extreme",
+        "motion_transition",
+        "curvature_feature",
+        "exit_datum"
+      ],
+      "zone_centers": [
+        11,
+        54,
+        80,
+        93,
+        108,
+        149
+      ],
+      "zone_windows": [
+        [
+          6,
+          16
+        ],
+        [
+          49,
+          59
+        ],
+        [
+          75,
+          85
+        ],
+        [
+          88,
+          98
+        ],
+        [
+          103,
+          113
+        ],
+        [
+          144,
+          154
+        ]
+      ],
+      "zone_tolerances_mm": [
+        0.28,
+        0.23,
+        0.18,
+        0.25,
+        0.2,
+        0.3
+      ],
+      "generation_rules": [
+        "program entry datum",
+        "maximum programmed curvature change",
+        "maximum programmed radial extent",
+        "maximum programmed jerk",
+        "maximum programmed curvature",
+        "program exit datum"
+      ]
+    },
+    "figure_eight": {
+      "zone_names": [
+        "entry_datum",
+        "functional_extreme",
+        "blend_transition",
+        "motion_transition",
+        "curvature_feature",
+        "exit_datum"
+      ],
+      "zone_roles": [
+        "entry_datum",
+        "functional_extreme",
+        "blend_transition",
+        "motion_transition",
+        "curvature_feature",
+        "exit_datum"
+      ],
+      "zone_centers": [
+        11,
+        52,
+        67,
+        80,
+        96,
+        149
+      ],
+      "zone_windows": [
+        [
+          6,
+          16
+        ],
+        [
+          47,
+          57
+        ],
+        [
+          62,
+          72
+        ],
+        [
+          75,
+          85
+        ],
+        [
+          91,
+          101
+        ],
+        [
+          144,
+          154
+        ]
+      ],
+      "zone_tolerances_mm": [
+        0.28,
+        0.18,
+        0.23,
+        0.25,
+        0.2,
+        0.3
+      ],
+      "generation_rules": [
+        "program entry datum",
+        "maximum programmed radial extent",
+        "maximum programmed curvature change",
+        "maximum programmed jerk",
+        "maximum programmed curvature",
+        "program exit datum"
+      ]
+    },
+    "s_curve": {
+      "zone_names": [
+        "entry_datum",
+        "functional_extreme",
+        "blend_transition",
+        "motion_transition",
+        "curvature_feature",
+        "exit_datum"
+      ],
+      "zone_roles": [
+        "entry_datum",
+        "functional_extreme",
+        "blend_transition",
+        "motion_transition",
+        "curvature_feature",
+        "exit_datum"
+      ],
+      "zone_centers": [
+        11,
+        24,
+        64,
+        80,
+        93,
+        149
+      ],
+      "zone_windows": [
+        [
+          6,
+          16
+        ],
+        [
+          19,
+          29
+        ],
+        [
+          59,
+          69
+        ],
+        [
+          75,
+          85
+        ],
+        [
+          88,
+          98
+        ],
+        [
+          144,
+          154
+        ]
+      ],
+      "zone_tolerances_mm": [
+        0.28,
+        0.18,
+        0.23,
+        0.25,
+        0.2,
+        0.3
+      ],
+      "generation_rules": [
+        "program entry datum",
+        "maximum programmed radial extent",
+        "maximum programmed curvature change",
+        "maximum programmed jerk",
+        "maximum programmed curvature",
+        "program exit datum"
+      ]
+    }
+  },
+  "gate": {
+    "primary_method": "violation_safe",
+    "comparisons": {
+      "full_trajectory": {
+        "paired_cases": 30,
+        "median_auc_improvement_percent": 6.716603654066667,
+        "mean_auc_improvement_percent": 8.059588180459022,
+        "win_rate": 0.8666666666666667,
+        "tie_rate": 0.0
+      },
+      "static_tolerance": {
+        "paired_cases": 30,
+        "median_auc_improvement_percent": 7.8319010789543455,
+        "mean_auc_improvement_percent": 9.89671220922107,
+        "win_rate": 0.9,
+        "tie_rate": 0.03333333333333333
+      },
+      "curvature_zones": {
+        "paired_cases": 30,
+        "median_auc_improvement_percent": 8.901665341311418,
+        "mean_auc_improvement_percent": 9.909506918608338,
+        "win_rate": 0.7333333333333333,
+        "tie_rate": 0.03333333333333333
+      },
+      "jerk_zones": {
+        "paired_cases": 30,
+        "median_auc_improvement_percent": 28.563589193056398,
+        "mean_auc_improvement_percent": 21.949275344495746,
+        "win_rate": 0.8,
+        "tie_rate": 0.0
+      },
+      "error_peak_dynamic": {
+        "paired_cases": 30,
+        "median_auc_improvement_percent": 0.0,
+        "mean_auc_improvement_percent": 1.6681635509908799,
+        "win_rate": 0.4666666666666667,
+        "tie_rate": 0.36666666666666664
+      },
+      "violation_dynamic": {
+        "paired_cases": 30,
+        "median_auc_improvement_percent": 0.0,
+        "mean_auc_improvement_percent": 0.0,
+        "win_rate": 0.0,
+        "tie_rate": 1.0
+      },
+      "random_zones": {
+        "paired_cases": 30,
+        "median_auc_improvement_percent": 23.57687148118626,
+        "mean_auc_improvement_percent": 21.99575917915172,
+        "win_rate": 0.9333333333333333,
+        "tie_rate": 0.0
+      }
+    },
+    "primary_success_rate": 1.0,
+    "criteria": {
+      "median_improvement_vs_full_at_least_10_percent": false,
+      "win_rate_vs_error_peak_at_least_60_percent": false,
+      "not_worse_than_plain_violation_scheduler": true,
+      "success_rate_at_least_95_percent": true
+    },
+    "passed": false,
+    "decision": "REVISE"
+  },
+  "summary": [
+    {
+      "method": "full_trajectory",
+      "runs": 30,
+      "median_task_auc": 0.40893492456182634,
+      "median_final_task_ratio": 0.17201220554617946,
+      "median_final_violation_rate": 0.3333333333333333,
+      "median_final_global_ratio": 0.17806663544367152,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0,
+      "median_elapsed_s": 0.2469648334999981
+    },
+    {
+      "method": "static_tolerance",
+      "runs": 30,
+      "median_task_auc": 0.40234528596689967,
+      "median_final_task_ratio": 0.25065938998590936,
+      "median_final_violation_rate": 0.3333333333333333,
+      "median_final_global_ratio": 0.33530774108277683,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0,
+      "median_elapsed_s": 0.20851731249999972
+    },
+    {
+      "method": "curvature_zones",
+      "runs": 30,
+      "median_task_auc": 0.38475250493038204,
+      "median_final_task_ratio": 0.1709985507865996,
+      "median_final_violation_rate": 0.3333333333333333,
+      "median_final_global_ratio": 0.3190277941746785,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0,
+      "median_elapsed_s": 0.211118083000001
+    },
+    {
+      "method": "jerk_zones",
+      "runs": 30,
+      "median_task_auc": 0.4906217089502988,
+      "median_final_task_ratio": 0.28756796169340837,
+      "median_final_violation_rate": 0.3333333333333333,
+      "median_final_global_ratio": 0.2902267535186143,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0,
+      "median_elapsed_s": 0.20721847900000334
+    },
+    {
+      "method": "error_peak_dynamic",
+      "runs": 30,
+      "median_task_auc": 0.3731114262196864,
+      "median_final_task_ratio": 0.16589774807456875,
+      "median_final_violation_rate": 0.3333333333333333,
+      "median_final_global_ratio": 0.3069417323978373,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0,
+      "median_elapsed_s": 0.2132890209999978
+    },
+    {
+      "method": "violation_dynamic",
+      "runs": 30,
+      "median_task_auc": 0.3671519803828449,
+      "median_final_task_ratio": 0.1469501076319231,
+      "median_final_violation_rate": 0.25,
+      "median_final_global_ratio": 0.31704492222524144,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0,
+      "median_elapsed_s": 0.21484893749999934
+    },
+    {
+      "method": "violation_safe",
+      "runs": 30,
+      "median_task_auc": 0.3671519803828449,
+      "median_final_task_ratio": 0.1469501076319231,
+      "median_final_violation_rate": 0.25,
+      "median_final_global_ratio": 0.3245908801696272,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0,
+      "median_elapsed_s": 0.21170464550000112
+    },
+    {
+      "method": "random_zones",
+      "runs": 30,
+      "median_task_auc": 0.49837770905736084,
+      "median_final_task_ratio": 0.3052082839571127,
+      "median_final_violation_rate": 0.3333333333333333,
+      "median_final_global_ratio": 0.32637230942145995,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0,
+      "median_elapsed_s": 0.2054336670000012
+    }
+  ]
+}

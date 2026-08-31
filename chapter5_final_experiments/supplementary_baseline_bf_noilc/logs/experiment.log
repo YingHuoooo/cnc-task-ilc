@@ -1,0 +1,12 @@
+2026-08-21 supplementary constrained BF-NOILC experiment
+protocol: protocol_pre_execution.json frozen before formal execution
+smoke: 2 method runs on excluded seed 26999; PASS
+formal grid: 960/960 method runs completed
+paired cases: 480
+trial rows: 4800
+update rows: 3840
+bootstrap: 20000 hierarchical/plant/paired resamples per metric cell
+finite outputs: PASS
+solver success: PASS (all updates)
+implemented command constraints: PASS (all updates and final commands)
+artifact validation: PASS

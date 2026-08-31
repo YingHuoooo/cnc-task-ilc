@@ -1,0 +1,13 @@
+Claim,n,Median improvement,95% CI,Win rate,Status
+"V8 dual-anchor vs error peak, conflict tasks",30,4.272%,"[2.438, 6.095]%",100%,formal primary confirmed
+"V8 dual-anchor vs full trajectory, all tasks",90,6.718%,"[5.908, 8.657]%",86.7%,formal secondary confirmed
+V10 triple stress vs error peak,20,0.266%,"[-0.537, 1.786]%",65%,unresolved
+V10 delay main effect on dual-anchor AUC,20,41.441% degradation,"[34.089, 60.074]%",—,dominant factor
+V10 mismatch main effect on dual-anchor AUC,20,-1.676% (favorable direction),"[-3.861, -0.012]%",—,non-monotone factor
+"V11 vs original dual-anchor, baseline",20,5.260%,"[4.097, 6.969]%",90%,frozen supporting positive
+"V11 vs original dual-anchor, delay +2",20,6.243%,"[4.797, 6.968]%",100%,frozen supporting positive
+"V11 vs original dual-anchor, delay +4",20,4.616%,"[1.844, 8.190]%",90%,prespecified confirmatory
+"V11 vs original dual-anchor, triple stress",20,6.766%,"[4.705, 9.558]%",90%,prespecified confirmatory
+"V12 online vs fixed +2, drift",15,-0.259%,"[-1.210, 1.619]%",46.7%,development gate failed
+"V13 rolling vs V11, slow drift",20,-0.317%,"[-0.885, 0.856]%",45%,development gate failed
+"V13 rolling vs V11, switch",20,-0.188%,"[-0.490, 0.014]%",30%,development gate failed

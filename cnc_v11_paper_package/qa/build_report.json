@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "final_method": "V11 delay_aware_dual_anchor",
+  "snapshot_files": 64,
+  "source_lock_present": true,
+  "source_data_tables": 10,
+  "figures": 5,
+  "figure_formats": [
+    "svg",
+    "pdf",
+    "tiff",
+    "png"
+  ],
+  "linuxcnc_executed": false
+}

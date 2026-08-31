@@ -1,0 +1,161 @@
+{
+  "stage": "v13_one_shot_adaptive_delay_development",
+  "development_domain_seeds": [
+    1901,
+    1931,
+    1951,
+    1973
+  ],
+  "formal_domain_seeds_reserved": [
+    2027,
+    2053,
+    2081,
+    2099
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "balanced_static",
+      "label": "Balanced low/high and asymmetric static delays",
+      "mode": "static"
+    },
+    {
+      "scenario_id": "balanced_slow_drift",
+      "label": "Balanced rising, falling and asymmetric slow drift",
+      "mode": "slow_drift"
+    },
+    {
+      "scenario_id": "balanced_switch",
+      "label": "Balanced abrupt and asymmetric delay switches",
+      "mode": "switch"
+    }
+  ],
+  "methods": [
+    "dual_anchor_dynamic",
+    "fixed_delay_2",
+    "delay_aware_dual_anchor",
+    "adaptive_rolling_delay",
+    "oracle_adaptive_delay"
+  ],
+  "adaptive_design": {
+    "rolling_window_trials": 2,
+    "minimum_gain": 0.15,
+    "maximum_gain": 0.38,
+    "maximum_applied_lag_steps": 3.5,
+    "confidence_sources": [
+      "axis velocity-correlation peak",
+      "axis correlation peak margin"
+    ]
+  },
+  "comparisons_vs_fixed2": {
+    "balanced_static": {
+      "scenario_id": "balanced_static",
+      "proposed": "adaptive_rolling_delay",
+      "comparator": "fixed_delay_2",
+      "paired_cases": 20,
+      "median_task_auc_improvement_percent": 3.5982383180173008,
+      "mean_task_auc_improvement_percent": 2.799979273057555,
+      "strict_win_rate": 0.7,
+      "tie_rate": 0.0
+    },
+    "balanced_slow_drift": {
+      "scenario_id": "balanced_slow_drift",
+      "proposed": "adaptive_rolling_delay",
+      "comparator": "fixed_delay_2",
+      "paired_cases": 20,
+      "median_task_auc_improvement_percent": 0.7675284949681284,
+      "mean_task_auc_improvement_percent": -0.694097795687652,
+      "strict_win_rate": 0.55,
+      "tie_rate": 0.0
+    },
+    "balanced_switch": {
+      "scenario_id": "balanced_switch",
+      "proposed": "adaptive_rolling_delay",
+      "comparator": "fixed_delay_2",
+      "paired_cases": 20,
+      "median_task_auc_improvement_percent": 0.7335748422202132,
+      "mean_task_auc_improvement_percent": 1.0482179223642867,
+      "strict_win_rate": 0.65,
+      "tie_rate": 0.0
+    }
+  },
+  "comparisons_vs_v11": {
+    "balanced_static": {
+      "scenario_id": "balanced_static",
+      "proposed": "adaptive_rolling_delay",
+      "comparator": "delay_aware_dual_anchor",
+      "paired_cases": 20,
+      "median_task_auc_improvement_percent": 0.4702149741816388,
+      "mean_task_auc_improvement_percent": 0.2905967782506268,
+      "strict_win_rate": 0.65,
+      "tie_rate": 0.0
+    },
+    "balanced_slow_drift": {
+      "scenario_id": "balanced_slow_drift",
+      "proposed": "adaptive_rolling_delay",
+      "comparator": "delay_aware_dual_anchor",
+      "paired_cases": 20,
+      "median_task_auc_improvement_percent": -0.3170954252779954,
+      "mean_task_auc_improvement_percent": -1.4005195266072916,
+      "strict_win_rate": 0.45,
+      "tie_rate": 0.0
+    },
+    "balanced_switch": {
+      "scenario_id": "balanced_switch",
+      "proposed": "adaptive_rolling_delay",
+      "comparator": "delay_aware_dual_anchor",
+      "paired_cases": 20,
+      "median_task_auc_improvement_percent": -0.187900549112466,
+      "mean_task_auc_improvement_percent": -0.27058164919473693,
+      "strict_win_rate": 0.3,
+      "tie_rate": 0.0
+    }
+  },
+  "oracle_gap_diagnostics": {
+    "balanced_static": {
+      "scenario_id": "balanced_static",
+      "paired_cases": 20,
+      "median_online_excess_auc_over_oracle_percent": 0.01507366822978172,
+      "mean_online_excess_auc_over_oracle_percent": 0.02993603646763594,
+      "online_no_worse_than_oracle_rate": 0.5
+    },
+    "balanced_slow_drift": {
+      "scenario_id": "balanced_slow_drift",
+      "paired_cases": 20,
+      "median_online_excess_auc_over_oracle_percent": -0.48891210565751897,
+      "mean_online_excess_auc_over_oracle_percent": -0.226252911704005,
+      "online_no_worse_than_oracle_rate": 0.8
+    },
+    "balanced_switch": {
+      "scenario_id": "balanced_switch",
+      "paired_cases": 20,
+      "median_online_excess_auc_over_oracle_percent": -0.14290452106636464,
+      "mean_online_excess_auc_over_oracle_percent": -0.13904761183132902,
+      "online_no_worse_than_oracle_rate": 0.7
+    }
+  },
+  "primary_success_rate": 1.0,
+  "median_axis_lag_absolute_error_steps": 0.5,
+  "screening_thresholds": {
+    "each_scenario_median_improvement_vs_fixed2_above_percent": 0.0,
+    "each_scenario_win_rate_vs_fixed2_at_least": 0.6,
+    "slow_and_switch_median_improvement_vs_v11_above_percent": 0.0,
+    "slow_and_switch_win_rate_vs_v11_at_least": 0.6,
+    "static_median_improvement_vs_v11_above_percent": -1.0,
+    "median_axis_lag_absolute_error_at_most_steps": 1.5,
+    "median_excess_auc_over_oracle_at_most_percent": 10.0,
+    "solver_and_constraint_success_rate_at_least": 0.95
+  },
+  "criteria": {
+    "each_scenario_median_improvement_vs_fixed2_above_zero": true,
+    "each_scenario_win_rate_vs_fixed2_at_least_60_percent": false,
+    "slow_and_switch_median_improvement_vs_v11_above_zero": false,
+    "slow_and_switch_win_rate_vs_v11_at_least_60_percent": false,
+    "static_noninferior_to_v11_within_one_percent": true,
+    "median_axis_lag_error_at_most_1p5_steps": true,
+    "each_median_oracle_excess_at_most_ten_percent": true,
+    "success_rate_at_least_95_percent": true
+  },
+  "passed": false,
+  "decision": "STOP_USE_V11",
+  "total_method_runs": 300
+}

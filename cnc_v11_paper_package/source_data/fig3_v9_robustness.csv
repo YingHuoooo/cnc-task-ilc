@@ -1,0 +1,8 @@
+stage,scope,comparison,paired_n,median_improvement_percent,ci95_low_percent,ci95_high_percent,win_rate,status
+V9 formal,baseline,dual_anchor_dynamic vs error_peak_dynamic,20,1.330537,0.066009,2.97361,0.7,confirmed
+V9 formal,noise_0p02,dual_anchor_dynamic vs error_peak_dynamic,20,0.885694,0.181484,2.954527,0.7,confirmed
+V9 formal,noise_0p05,dual_anchor_dynamic vs error_peak_dynamic,20,1.656373,-0.218797,3.0244,0.7,unresolved
+V9 formal,delay_2,dual_anchor_dynamic vs error_peak_dynamic,20,2.27192,0.666457,3.559239,0.95,confirmed
+V9 formal,delay_4,dual_anchor_dynamic vs error_peak_dynamic,20,1.349155,0.328746,3.128836,0.7,confirmed
+V9 formal,mismatch_1p35,dual_anchor_dynamic vs error_peak_dynamic,20,1.011466,0.388524,2.272135,0.8,confirmed
+V9 formal,mismatch_1p70,dual_anchor_dynamic vs error_peak_dynamic,20,1.164164,0.029974,2.273015,0.7,confirmed

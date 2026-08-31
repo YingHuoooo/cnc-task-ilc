@@ -1,0 +1,186 @@
+{
+  "status": "pass",
+  "linuxcnc_executed": false,
+  "physical_machine_executed": false,
+  "new_numerical_method_runs": 4380,
+  "checks_passed": 35,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "name": "complete_artifact_set",
+      "status": "pass",
+      "detail": "missing=[]"
+    },
+    {
+      "name": "scope_excludes_linuxcnc_and_physical_machine",
+      "status": "pass",
+      "detail": "new package must remain numerical-only and preserve old evidence"
+    },
+    {
+      "name": "pre_execution_code_hashes",
+      "status": "pass",
+      "detail": "execution code must match the pre-execution protocol"
+    },
+    {
+      "name": "ablation_row_count",
+      "status": "pass",
+      "detail": "expected=1800, observed=1800"
+    },
+    {
+      "name": "ablation_job_ids_unique",
+      "status": "pass",
+      "detail": "duplicates=0"
+    },
+    {
+      "name": "ablation_finite",
+      "status": "pass",
+      "detail": "all results must be finite"
+    },
+    {
+      "name": "ablation_solver_constraint_success_at_least_95_percent",
+      "status": "pass",
+      "detail": "observed=1.000000"
+    },
+    {
+      "name": "sensitivity_row_count",
+      "status": "pass",
+      "detail": "expected=780, observed=780"
+    },
+    {
+      "name": "sensitivity_job_ids_unique",
+      "status": "pass",
+      "detail": "duplicates=0"
+    },
+    {
+      "name": "sensitivity_finite",
+      "status": "pass",
+      "detail": "all results must be finite"
+    },
+    {
+      "name": "sensitivity_solver_constraint_success_at_least_95_percent",
+      "status": "pass",
+      "detail": "observed=1.000000"
+    },
+    {
+      "name": "plant_family_row_count",
+      "status": "pass",
+      "detail": "expected=1800, observed=1800"
+    },
+    {
+      "name": "plant_family_job_ids_unique",
+      "status": "pass",
+      "detail": "duplicates=0"
+    },
+    {
+      "name": "plant_family_finite",
+      "status": "pass",
+      "detail": "all results must be finite"
+    },
+    {
+      "name": "plant_family_solver_constraint_success_at_least_95_percent",
+      "status": "pass",
+      "detail": "observed=1.000000"
+    },
+    {
+      "name": "ablation_matched_method_completeness",
+      "status": "pass",
+      "detail": "paired_keys=360"
+    },
+    {
+      "name": "plant_family_counts",
+      "status": "pass",
+      "detail": "held_out=24, challenge=6"
+    },
+    {
+      "name": "bootstrap_statistics_complete",
+      "status": "pass",
+      "detail": "rows=21"
+    },
+    {
+      "name": "sensitivity_summary_complete",
+      "status": "pass",
+      "detail": "rows=32, parameters=['learning_rate', 'nominal_control_points', 'residual_delay_shrinkage', 'smoothing_window']"
+    },
+    {
+      "name": "replay_pointwise_complete",
+      "status": "pass",
+      "detail": "rows=161"
+    },
+    {
+      "name": "fig1_matched_ablation_four_formats",
+      "status": "pass",
+      "detail": "SVG/PDF/TIFF/PNG must exist"
+    },
+    {
+      "name": "fig1_matched_ablation_editable_svg_text",
+      "status": "pass",
+      "detail": "SVG must preserve editable text"
+    },
+    {
+      "name": "fig1_matched_ablation_raster_resolution",
+      "status": "pass",
+      "detail": "tiff_dpi=(600.0, 600.0), png_dpi=(299.9994, 299.9994)"
+    },
+    {
+      "name": "fig2_domain_aware_statistics_four_formats",
+      "status": "pass",
+      "detail": "SVG/PDF/TIFF/PNG must exist"
+    },
+    {
+      "name": "fig2_domain_aware_statistics_editable_svg_text",
+      "status": "pass",
+      "detail": "SVG must preserve editable text"
+    },
+    {
+      "name": "fig2_domain_aware_statistics_raster_resolution",
+      "status": "pass",
+      "detail": "tiff_dpi=(600.0, 600.0), png_dpi=(299.9994, 299.9994)"
+    },
+    {
+      "name": "fig3_parameter_sensitivity_four_formats",
+      "status": "pass",
+      "detail": "SVG/PDF/TIFF/PNG must exist"
+    },
+    {
+      "name": "fig3_parameter_sensitivity_editable_svg_text",
+      "status": "pass",
+      "detail": "SVG must preserve editable text"
+    },
+    {
+      "name": "fig3_parameter_sensitivity_raster_resolution",
+      "status": "pass",
+      "detail": "tiff_dpi=(600.0, 600.0), png_dpi=(299.9994, 299.9994)"
+    },
+    {
+      "name": "fig4_representative_replay_four_formats",
+      "status": "pass",
+      "detail": "SVG/PDF/TIFF/PNG must exist"
+    },
+    {
+      "name": "fig4_representative_replay_editable_svg_text",
+      "status": "pass",
+      "detail": "SVG must preserve editable text"
+    },
+    {
+      "name": "fig4_representative_replay_raster_resolution",
+      "status": "pass",
+      "detail": "tiff_dpi=(600.0, 600.0), png_dpi=(299.9994, 299.9994)"
+    },
+    {
+      "name": "fig5_virtual_plant_family_four_formats",
+      "status": "pass",
+      "detail": "SVG/PDF/TIFF/PNG must exist"
+    },
+    {
+      "name": "fig5_virtual_plant_family_editable_svg_text",
+      "status": "pass",
+      "detail": "SVG must preserve editable text"
+    },
+    {
+      "name": "fig5_virtual_plant_family_raster_resolution",
+      "status": "pass",
+      "detail": "tiff_dpi=(600.0, 600.0), png_dpi=(299.9994, 299.9994)"
+    }
+  ],
+  "manifest_files": 50
+}

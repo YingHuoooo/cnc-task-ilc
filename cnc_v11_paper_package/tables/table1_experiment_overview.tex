@@ -1,0 +1,20 @@
+% Requires \usepackage{booktabs,tabularx,array}
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{实验阶段与证据角色}
+\label{tab:table1_experiment_overview}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+Stage & Role & Design & Runs & Decision \\
+\midrule
+V8 & Formal effectiveness & 15 tasks $\times$ 6 domains $\times$ 8 methods & 720 & PASS \\
+V9 & One-factor robustness & 15 tasks $\times$ 4 domains $\times$ 7 scenarios $\times$ 4 methods & 1680 & BROADLY\_ROBUST \\
+V10 & 2$\times$2$\times$2 factorial diagnosis & 15 tasks $\times$ 4 domains $\times$ 8 cells $\times$ 4 methods & 1920 & COMBINED\_ADVANTAGE\_UNRESOLVED \\
+V11 & Formal delay compensation & 15 tasks $\times$ 4 domains $\times$ 4 scenarios $\times$ 5 methods & 1200 & DELAY\_COMPENSATION\_CONFIRMED \\
+V12 & Unknown/drifting-delay development & 5 conflict tasks $\times$ 3 domains $\times$ 2 scenarios $\times$ 6 methods & 180 & STOP; no formal run \\
+V13 & Fast-adaptation development & 5 conflict tasks $\times$ 4 domains $\times$ 3 scenarios $\times$ 5 methods & 300 & STOP; final method V11 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

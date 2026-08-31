@@ -1,0 +1,82 @@
+{
+  "demo": {
+    "samples": 321,
+    "duration_s": 6.0,
+    "iterations": 8,
+    "bspline_variables": 32,
+    "critical_windows": [
+      [
+        48,
+        74
+      ],
+      [
+        123,
+        149
+      ],
+      [
+        173,
+        199
+      ]
+    ],
+    "critical_window_fraction": 0.2523364485981308,
+    "learner_model": "linear, decoupled, no delay, no friction",
+    "virtual_plant": "axis mismatch, delay, friction, saturation, coupling, repeatable disturbance"
+  },
+  "methods": {
+    "full_trajectory_ilc": {
+      "initial": {
+        "global_rmse": 0.6729729409258701,
+        "global_max_abs": 2.276518464518708,
+        "critical_rmse": 1.1793324448648494,
+        "critical_max_abs": 2.276518464518708,
+        "trial": 0.0
+      },
+      "final": {
+        "global_rmse": 0.022195789663581964,
+        "global_max_abs": 0.07919678045941353,
+        "critical_rmse": 0.012262259910320152,
+        "critical_max_abs": 0.030312862129622142,
+        "trial": 8.0
+      },
+      "critical_max_reduction_percent": 98.6684552485705,
+      "critical_rmse_reduction_percent": 98.96023721184696,
+      "global_rmse_reduction_percent": 96.70183029453679,
+      "all_qp_updates_succeeded": true
+    },
+    "critical_window_ilc": {
+      "initial": {
+        "global_rmse": 0.6729729409258701,
+        "global_max_abs": 2.276518464518708,
+        "critical_rmse": 1.1793324448648494,
+        "critical_max_abs": 2.276518464518708,
+        "trial": 0.0
+      },
+      "final": {
+        "global_rmse": 0.05405119480698362,
+        "global_max_abs": 0.19259385119896022,
+        "critical_rmse": 0.007844339186681181,
+        "critical_max_abs": 0.02934494648429331,
+        "trial": 8.0
+      },
+      "critical_max_reduction_percent": 98.71097261271292,
+      "critical_rmse_reduction_percent": 99.3348492004237,
+      "global_rmse_reduction_percent": 91.96829597151105,
+      "all_qp_updates_succeeded": true
+    }
+  },
+  "comparison": {
+    "critical_final_rmse_advantage_percent_vs_full": 36.028601219916766,
+    "critical_final_peak_advantage_percent_vs_full": 3.193085632065642,
+    "critical_global_rmse_tradeoff_percent_vs_full": 143.52003522392732
+  },
+  "critical_window_constraints": {
+    "max_abs_correction": 1.9339907277453179,
+    "max_abs_velocity": 52.291083452578256,
+    "max_abs_acceleration": 132.42994183267203,
+    "configured_max_correction": 4.0,
+    "configured_velocity_limit": 61.223074753318045,
+    "configured_acceleration_limit": 171.14890652694208,
+    "constraint_violation": 0
+  },
+  "feasibility_passed": true
+}

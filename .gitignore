@@ -1,0 +1,29 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local numerical and plotting caches
+.matplotlib-cache/
+.cache/
+
+# Editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
+*~
+
+# LaTeX build products (experiment logs are intentionally not ignored)
+*.aux
+*.blg
+*.bbl
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+

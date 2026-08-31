@@ -1,0 +1,9 @@
+stage,scope,comparison,paired_n,median_improvement_percent,ci95_low_percent,ci95_high_percent,win_rate,status
+V8 formal,demand_conflict,dual_anchor_dynamic vs full_trajectory,30,2.298137,-0.279318,6.425927,0.666667,supplementary
+V8 formal,demand_conflict,dual_anchor_dynamic vs static_tolerance,30,42.459044,40.608119,50.111213,1.0,supplementary
+V8 formal,demand_conflict,dual_anchor_dynamic vs curvature_zones,30,19.303089,6.843463,29.955592,0.9,supplementary
+V8 formal,demand_conflict,dual_anchor_dynamic vs error_peak_dynamic,30,4.271941,2.437995,6.09533,1.0,primary confirmed
+V8 formal,demand_conflict,dual_anchor_dynamic vs violation_dynamic,30,4.966013,2.129282,6.65881,0.866667,supplementary
+V8 formal,demand_conflict,dual_anchor_dynamic vs violation_safe,30,4.966013,2.129282,6.65881,0.866667,supplementary
+V8 formal,demand_conflict,dual_anchor_dynamic vs random_zones,30,34.065547,28.705526,38.836245,1.0,supplementary
+V8 formal,all tasks,dual_anchor_dynamic vs full_trajectory,90,6.717905,5.908328,8.657034,0.866667,secondary confirmed

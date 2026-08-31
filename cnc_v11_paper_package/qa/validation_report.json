@@ -1,0 +1,329 @@
+{
+  "status": "pass",
+  "optimization_experiments_executed": false,
+  "linuxcnc_executed": false,
+  "checks_passed": 64,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "name": "complete_document_set",
+      "status": "pass",
+      "detail": "missing=[]"
+    },
+    {
+      "name": "method_lock",
+      "status": "pass",
+      "detail": "final method must be V11 delay_aware_dual_anchor"
+    },
+    {
+      "name": "linuxcnc_excluded",
+      "status": "pass",
+      "detail": "LinuxCNC and physical machine must remain outside this package"
+    },
+    {
+      "name": "no_false_jerk_constraint",
+      "status": "pass",
+      "detail": "implemented QP has no explicit jerk constraint"
+    },
+    {
+      "name": "v8_raw_row_count",
+      "status": "pass",
+      "detail": "expected 720, observed 720"
+    },
+    {
+      "name": "v8_formal_or_development_seed_set",
+      "status": "pass",
+      "detail": "expected [1103, 1129, 1151, 1171, 1193, 1217], observed [1103, 1129, 1151, 1171, 1193, 1217]"
+    },
+    {
+      "name": "v8_design_key_unique",
+      "status": "pass",
+      "detail": "fields=['manifest_id', 'domain_seed', 'method'], duplicate_count=0"
+    },
+    {
+      "name": "v8_finite_solver_constraint_success",
+      "status": "pass",
+      "detail": "all rows must be finite, solver-successful and constraint-compliant"
+    },
+    {
+      "name": "v9_raw_row_count",
+      "status": "pass",
+      "detail": "expected 1680, observed 1680"
+    },
+    {
+      "name": "v9_formal_or_development_seed_set",
+      "status": "pass",
+      "detail": "expected [1301, 1321, 1361, 1381], observed [1301, 1321, 1361, 1381]"
+    },
+    {
+      "name": "v9_design_key_unique",
+      "status": "pass",
+      "detail": "fields=['manifest_id', 'domain_seed', 'method', 'scenario_id'], duplicate_count=0"
+    },
+    {
+      "name": "v9_finite_solver_constraint_success",
+      "status": "pass",
+      "detail": "all rows must be finite, solver-successful and constraint-compliant"
+    },
+    {
+      "name": "v10_raw_row_count",
+      "status": "pass",
+      "detail": "expected 1920, observed 1920"
+    },
+    {
+      "name": "v10_formal_or_development_seed_set",
+      "status": "pass",
+      "detail": "expected [1423, 1451, 1471, 1499], observed [1423, 1451, 1471, 1499]"
+    },
+    {
+      "name": "v10_design_key_unique",
+      "status": "pass",
+      "detail": "fields=['manifest_id', 'domain_seed', 'method', 'scenario_id'], duplicate_count=0"
+    },
+    {
+      "name": "v10_finite_solver_constraint_success",
+      "status": "pass",
+      "detail": "all rows must be finite, solver-successful and constraint-compliant"
+    },
+    {
+      "name": "v11_raw_row_count",
+      "status": "pass",
+      "detail": "expected 1200, observed 1200"
+    },
+    {
+      "name": "v11_formal_or_development_seed_set",
+      "status": "pass",
+      "detail": "expected [1601, 1627, 1657, 1669], observed [1601, 1627, 1657, 1669]"
+    },
+    {
+      "name": "v11_design_key_unique",
+      "status": "pass",
+      "detail": "fields=['manifest_id', 'domain_seed', 'method', 'scenario_id'], duplicate_count=0"
+    },
+    {
+      "name": "v11_finite_solver_constraint_success",
+      "status": "pass",
+      "detail": "all rows must be finite, solver-successful and constraint-compliant"
+    },
+    {
+      "name": "v12_raw_row_count",
+      "status": "pass",
+      "detail": "expected 180, observed 180"
+    },
+    {
+      "name": "v12_formal_or_development_seed_set",
+      "status": "pass",
+      "detail": "expected [1709, 1723, 1741], observed [1709, 1723, 1741]"
+    },
+    {
+      "name": "v12_design_key_unique",
+      "status": "pass",
+      "detail": "fields=['manifest_id', 'domain_seed', 'method', 'scenario_id'], duplicate_count=0"
+    },
+    {
+      "name": "v12_finite_solver_constraint_success",
+      "status": "pass",
+      "detail": "all rows must be finite, solver-successful and constraint-compliant"
+    },
+    {
+      "name": "v13_raw_row_count",
+      "status": "pass",
+      "detail": "expected 300, observed 300"
+    },
+    {
+      "name": "v13_formal_or_development_seed_set",
+      "status": "pass",
+      "detail": "expected [1901, 1931, 1951, 1973], observed [1901, 1931, 1951, 1973]"
+    },
+    {
+      "name": "v13_design_key_unique",
+      "status": "pass",
+      "detail": "fields=['manifest_id', 'domain_seed', 'method', 'scenario_id'], duplicate_count=0"
+    },
+    {
+      "name": "v13_finite_solver_constraint_success",
+      "status": "pass",
+      "detail": "all rows must be finite, solver-successful and constraint-compliant"
+    },
+    {
+      "name": "reserved_formal_seeds_absent_from_raw_data",
+      "status": "pass",
+      "detail": "unexpected reserved seeds=[]"
+    },
+    {
+      "name": "v8_primary_confirmed",
+      "status": "pass",
+      "detail": "CI=[2.437995241362158, 6.095329518159415], win_rate=1.0"
+    },
+    {
+      "name": "frozen_classifications",
+      "status": "pass",
+      "detail": "observed={'v9': 'BROADLY_ROBUST', 'v10': 'COMBINED_ADVANTAGE_UNRESOLVED', 'v11': 'DELAY_COMPENSATION_CONFIRMED', 'v12': 'DEVELOPMENT_GATE_FAILED_NO_FORMAL_RUN', 'v13': 'V13_DEVELOPMENT_FAILED_FINAL_METHOD_V11'}"
+    },
+    {
+      "name": "v11_all_observed_scenario_intervals_positive",
+      "status": "pass",
+      "detail": "lower_bounds={'n0_d0_m0': 4.097154001016326, 'delay_2': 4.796783811435135, 'n0_d1_m0': 1.8436767983250486, 'n1_d1_m1': 4.704878643459853}"
+    },
+    {
+      "name": "v11_prespecified_gate_criteria_passed",
+      "status": "pass",
+      "detail": "criteria={'delay4_and_extreme_conflict_ci_lower_above_zero': True, 'delay4_and_extreme_conflict_win_rate_at_least_60_percent': True, 'delay4_and_extreme_all_tasks_vs_full_ci_lower_above_zero': True, 'baseline_conflict_median_improvement_above_minus_two_percent': True, 'extreme_median_normalized_task_auc_below_one': True, 'extreme_median_final_task_ratio_below_one': True, 'all_scenario_success_rates_at_least_95_percent': True}"
+    },
+    {
+      "name": "v11_observed_supporting_baseline_intervals_positive",
+      "status": "pass",
+      "detail": "lower_bounds={'n0_d0_m0:error_peak_dynamic': 6.2390562260000015, 'n0_d0_m0:full_trajectory_all': 8.613385526207379, 'delay_2:error_peak_dynamic': 6.967273779653084, 'delay_2:full_trajectory_all': 6.19327576691973, 'n0_d1_m0:error_peak_dynamic': 3.3836960757331136, 'n0_d1_m0:full_trajectory_all': 3.661934063322658, 'n1_d1_m1:error_peak_dynamic': 3.7725357826401824, 'n1_d1_m1:full_trajectory_all': 3.8528772666884223}"
+    },
+    {
+      "name": "v11_estimator_lock",
+      "status": "pass",
+      "detail": "gain and lag MAE must remain 0.25 and 0.5 samples"
+    },
+    {
+      "name": "development_seed_firewall",
+      "status": "pass",
+      "detail": "V12/V13 formal seeds must remain unused and final method must remain V11"
+    },
+    {
+      "name": "fig1_v11_technical_route_four_formats",
+      "status": "pass",
+      "detail": "SVG/PDF/TIFF/PNG must exist and be non-trivial"
+    },
+    {
+      "name": "fig1_v11_technical_route_editable_svg_text",
+      "status": "pass",
+      "detail": "SVG text must remain editable"
+    },
+    {
+      "name": "fig1_v11_technical_route_png_geometry",
+      "status": "pass",
+      "detail": "width=2276, height=1457, ratio=1.562"
+    },
+    {
+      "name": "fig2_v8_main_effectiveness_four_formats",
+      "status": "pass",
+      "detail": "SVG/PDF/TIFF/PNG must exist and be non-trivial"
+    },
+    {
+      "name": "fig2_v8_main_effectiveness_editable_svg_text",
+      "status": "pass",
+      "detail": "SVG text must remain editable"
+    },
+    {
+      "name": "fig2_v8_main_effectiveness_png_geometry",
+      "status": "pass",
+      "detail": "width=2185, height=1126, ratio=1.940"
+    },
+    {
+      "name": "fig3_v9_v10_robustness_boundary_four_formats",
+      "status": "pass",
+      "detail": "SVG/PDF/TIFF/PNG must exist and be non-trivial"
+    },
+    {
+      "name": "fig3_v9_v10_robustness_boundary_editable_svg_text",
+      "status": "pass",
+      "detail": "SVG text must remain editable"
+    },
+    {
+      "name": "fig3_v9_v10_robustness_boundary_png_geometry",
+      "status": "pass",
+      "detail": "width=2056, height=1160, ratio=1.772"
+    },
+    {
+      "name": "fig4_v11_delay_compensation_four_formats",
+      "status": "pass",
+      "detail": "SVG/PDF/TIFF/PNG must exist and be non-trivial"
+    },
+    {
+      "name": "fig4_v11_delay_compensation_editable_svg_text",
+      "status": "pass",
+      "detail": "SVG text must remain editable"
+    },
+    {
+      "name": "fig4_v11_delay_compensation_png_geometry",
+      "status": "pass",
+      "detail": "width=2107, height=1015, ratio=2.076"
+    },
+    {
+      "name": "fig5_v12_v13_design_boundaries_four_formats",
+      "status": "pass",
+      "detail": "SVG/PDF/TIFF/PNG must exist and be non-trivial"
+    },
+    {
+      "name": "fig5_v12_v13_design_boundaries_editable_svg_text",
+      "status": "pass",
+      "detail": "SVG text must remain editable"
+    },
+    {
+      "name": "fig5_v12_v13_design_boundaries_png_geometry",
+      "status": "pass",
+      "detail": "width=2009, height=1438, ratio=1.397"
+    },
+    {
+      "name": "figure_source_data_complete",
+      "status": "pass",
+      "detail": "missing=[], unexpected=[]"
+    },
+    {
+      "name": "c1_configuration_level_boundary",
+      "status": "pass",
+      "detail": "claim=The frozen V8 dual-anchor configuration improves conflict-task trial efficiency over the frozen error-peak configuration.; boundary=Configuration-level comparison on a frozen virtual taskset and held-out virtual domains; both use two active zones, but selection, zone weighting, and trust/rollback differ, so this is not an isolated scheduler ablation."
+    },
+    {
+      "name": "v10_mismatch_nonmonotone_value_preserved",
+      "status": "pass",
+      "detail": "row={'stage': 'V10 formal', 'scope': 'factorial effect', 'comparison': 'mismatch', 'paired_n': '20', 'median_improvement_percent': '-1.676392', 'ci95_low_percent': '-3.860541', 'ci95_high_percent': '-0.011959', 'win_rate': '', 'status': 'factor estimate'}"
+    },
+    {
+      "name": "v11_source_data_confirmatory_supporting_levels",
+      "status": "pass",
+      "detail": "statuses={('n0_d0_m0', 'V11 vs original dual-anchor'): 'frozen supporting positive', ('n0_d0_m0', 'V11 vs fixed +4'): 'frozen supporting positive', ('n0_d0_m0', 'V11 vs error-peak'): 'frozen supporting positive', ('n0_d0_m0', 'V11 vs full-trajectory (all tasks)'): 'frozen supporting positive', ('delay_2', 'V11 vs original dual-anchor'): 'frozen supporting positive', ('delay_2', 'V11 vs fixed +4'): 'unresolved', ('delay_2', 'V11 vs error-peak'): 'frozen supporting positive', ('delay_2', 'V11 vs full-trajectory (all tasks)'): 'frozen supporting positive', ('n0_d1_m0', 'V11 vs original dual-anchor'): 'prespecified confirmatory', ('n0_d1_m0', 'V11 vs fixed +4'): 'unresolved', ('n0_d1_m0', 'V11 vs error-peak'): 'frozen supporting positive', ('n0_d1_m0', 'V11 vs full-trajectory (all tasks)'): 'prespecified confirmatory', ('n1_d1_m1', 'V11 vs original dual-anchor'): 'prespecified confirmatory', ('n1_d1_m1', 'V11 vs fixed +4'): 'unresolved', ('n1_d1_m1', 'V11 vs error-peak'): 'frozen supporting positive', ('n1_d1_m1', 'V11 vs full-trajectory (all tasks)'): 'prespecified confirmatory'}"
+    },
+    {
+      "name": "paper_table_formats",
+      "status": "pass",
+      "detail": "three tables must each exist as CSV/Markdown/LaTeX"
+    },
+    {
+      "name": "latex_tables_use_wrapping_columns",
+      "status": "pass",
+      "detail": "LaTeX tables must use tabularx to wrap long evidence text"
+    },
+    {
+      "name": "source_lock_hashes_and_file_set",
+      "status": "pass",
+      "detail": "errors=[], missing=[], unexpected=[]"
+    },
+    {
+      "name": "source_lock_declared_count",
+      "status": "pass",
+      "detail": "declared=64, listed=64, actual=64"
+    },
+    {
+      "name": "frozen_protocol_hash_chain",
+      "status": "pass",
+      "detail": "failed=[]"
+    },
+    {
+      "name": "v11_metrics_provenance",
+      "status": "pass",
+      "detail": "V11 metrics must embed the exact frozen protocol and the 1200-run count"
+    },
+    {
+      "name": "manifest_hashes",
+      "status": "pass",
+      "detail": "errors=[]"
+    },
+    {
+      "name": "manifest_bidirectional_file_set",
+      "status": "pass",
+      "detail": "duplicates=0, missing=[], unexpected=[]"
+    },
+    {
+      "name": "manifest_scope",
+      "status": "pass",
+      "detail": "manifest scope must match VERSION_LOCK"
+    }
+  ]
+}

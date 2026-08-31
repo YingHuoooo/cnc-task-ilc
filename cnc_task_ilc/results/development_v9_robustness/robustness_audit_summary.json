@@ -1,0 +1,30 @@
+{
+  "stage": "v9_numerical_audit_only",
+  "taskset_sha256": "f2838bb56df7382ab7821c2140dbfd203108469ec529049d0b8263c6d05a51b9",
+  "audit_domain_seeds": [
+    1231,
+    1249
+  ],
+  "audit_scenario_ids": [
+    "baseline",
+    "noise_0p05",
+    "delay_4",
+    "mismatch_1p70"
+  ],
+  "methods": [
+    "full_trajectory",
+    "error_peak_dynamic",
+    "violation_safe",
+    "dual_anchor_dynamic"
+  ],
+  "total_method_runs": 160,
+  "finite_rate": 1.0,
+  "primary_success_rate": 1.0,
+  "criteria": {
+    "all_audit_results_finite": true,
+    "primary_success_rate_at_least_95_percent": true,
+    "all_four_declared_methods_executed": true
+  },
+  "passed": true,
+  "decision": "FREEZE_FORMAL_PROTOCOL"
+}

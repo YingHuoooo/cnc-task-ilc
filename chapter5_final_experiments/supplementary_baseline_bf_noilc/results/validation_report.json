@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": {
+    "run_row_count": true,
+    "trial_row_count": true,
+    "update_row_count": true,
+    "complete_method_pairing": true,
+    "paired_noise_seeds": true,
+    "eight_new_plants": true,
+    "fifteen_tasks": true,
+    "four_scenarios": true,
+    "baseline_alpha_one": true,
+    "proposed_alpha_frozen": true,
+    "parameter_matched_regularization": true,
+    "finite_results": true,
+    "solver_success": true,
+    "implemented_constraints": true,
+    "analysis_summary_present": true,
+    "analysis_report_present": true,
+    "figures_present": true
+  },
+  "counts": {
+    "runs": 960,
+    "trials": 4800,
+    "updates": 3840,
+    "paired_cases": 480
+  }
+}

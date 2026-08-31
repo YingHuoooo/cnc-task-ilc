@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with matplotlib (https://matplotlib.org/) -->
+<svg height="349.780778pt" version="1.1" viewBox="0 0 546.2784 349.780778" width="546.2784pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.3.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linecap:butt;stroke-linejoin:round;}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 349.780778 
+L 546.2784 349.780778 
+L 546.2784 0 
+L 0 0 
+z
+" style="fill:#ffffff;"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path clip-path="url(#p360b1503de)" d="M 56.448 88.694034 
+L 150.0192 88.694034 
+Q 155.92896 88.694034 155.92896 86.392173 
+L 155.92896 44.191388 
+Q 155.92896 41.889527 150.0192 41.889527 
+L 56.448 41.889527 
+Q 50.53824 41.889527 50.53824 44.191388 
+L 50.53824 86.392173 
+Q 50.53824 88.694034 56.448 88.694034 
+z
+" style="fill:#484878;opacity:0.92;"/>
+   </g>
+   <g id="patch_3">
+    <path clip-path="url(#p360b1503de)" d="M 179.568 88.694034 
+L 273.1392 88.694034 
+Q 279.04896 88.694034 279.04896 86.392173 
+L 279.04896 44.191388 
+Q 279.04896 41.889527 273.1392 41.889527 
+L 179.568 41.889527 
+Q 173.65824 41.889527 173.65824 44.191388 
+L 173.65824 86.392173 
+Q 173.65824 88.694034 179.568 88.694034 
+z
+" style="fill:#767676;opacity:0.92;"/>
+   </g>
+   <g id="patch_4">
+    <path clip-path="url(#p360b1503de)" d="M 302.688 88.694034 
+L 396.2592 88.694034 
+Q 402.16896 88.694034 402.16896 86.392173 
+L 402.16896 44.191388 
+Q 402.16896 41.889527 396.2592 41.889527 
+L 302.688 41.889527 
+Q 296.77824 41.889527 296.77824 44.191388 
+L 296.77824 86.392173 
+Q 296.77824 88.694034 302.688 88.694034 
+z
+" style="fill:#42949e;opacity:0.92;"/>
+   </g>
+   <g id="patch_5">
+    <path clip-path="url(#p360b1503de)" d="M 425.808 88.694034 
+L 519.3792 88.694034 
+Q 525.28896 88.694034 525.28896 86.392173 
+L 525.28896 44.191388 
+Q 525.28896 41.889527 519.3792 41.889527 
+L 425.808 41.889527 
+Q 419.89824 41.889527 419.89824 44.191388 
+L 419.89824 86.392173 
+Q 419.89824 88.694034 425.808 88.694034 
+z
+" style="fill:#7884b4;opacity:0.92;"/>
+   </g>
+   <g id="patch_6">
+    <path clip-path="url(#p360b1503de)" d="M 425.808 176.932039 
+L 519.3792 176.932039 
+Q 525.28896 176.932039 525.28896 174.630178 
+L 525.28896 132.429393 
+Q 525.28896 130.127532 519.3792 130.127532 
+L 425.808 130.127532 
+Q 419.89824 130.127532 419.89824 132.429393 
+L 419.89824 174.630178 
+Q 419.89824 176.932039 425.808 176.932039 
+z
+" style="fill:#c8902f;opacity:0.92;"/>
+   </g>
+   <g id="patch_7">
+    <path clip-path="url(#p360b1503de)" d="M 302.688 176.932039 
+L 396.2592 176.932039 
+Q 402.16896 176.932039 402.16896 174.630178 
+L 402.16896 132.429393 
+Q 402.16896 130.127532 396.2592 130.127532 
+L 302.688 130.127532 
+Q 296.77824 130.127532 296.77824 132.429393 
+L 296.77824 174.630178 
+Q 296.77824 176.932039 302.688 176.932039 
+z
+" style="fill:#0f4d92;opacity:0.92;"/>
+   </g>
+   <g id="patch_8">
+    <path clip-path="url(#p360b1503de)" d="M 179.568 176.932039 
+L 273.1392 176.932039 
+Q 279.04896 176.932039 279.04896 174.630178 
+L 279.04896 132.429393 
+Q 279.04896 130.127532 273.1392 130.127532 
+L 179.568 130.127532 
+Q 173.65824 130.127532 173.65824 132.429393 
+L 173.65824 174.630178 
+Q 173.65824 176.932039 179.568 176.932039 
+z
+" style="fill:#0f4d92;opacity:0.92;"/>
+   </g>
+   <g id="patch_9">
+    <path clip-path="url(#p360b1503de)" d="M 56.448 176.932039 
+L 150.0192 176.932039 
+Q 155.92896 176.932039 155.92896 174.630178 
+L 155.92896 132.429393 
+Q 155.92896 130.127532 150.0192 130.127532 
+L 56.448 130.127532 
+Q 50.53824 130.127532 50.53824 132.429393 
+L 50.53824 174.630178 
+Q 50.53824 176.932039 56.448 176.932039 
+z
+" style="fill:#2e9e44;opacity:0.92;"/>
+   </g>
+   <g id="patch_10">
+    <path clip-path="url(#p360b1503de)" d="M 152.021102 65.29178 
+Q 164.79416 65.29178 176.225577 65.29178 
+" style="fill:none;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+    <path clip-path="url(#p360b1503de)" d="M 172.225577 63.29178 
+L 176.225577 65.29178 
+L 172.225577 67.29178 
+L 172.225577 63.29178 
+z
+" style="fill:#272727;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_11">
+    <path clip-path="url(#p360b1503de)" d="M 275.141102 65.29178 
+Q 287.91416 65.29178 299.345577 65.29178 
+" style="fill:none;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+    <path clip-path="url(#p360b1503de)" d="M 295.345577 63.29178 
+L 299.345577 65.29178 
+L 295.345577 67.29178 
+L 295.345577 63.29178 
+z
+" style="fill:#272727;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_12">
+    <path clip-path="url(#p360b1503de)" d="M 398.261102 65.29178 
+Q 411.03416 65.29178 422.465577 65.29178 
+" style="fill:none;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+    <path clip-path="url(#p360b1503de)" d="M 418.465577 63.29178 
+L 422.465577 65.29178 
+L 418.465577 67.29178 
+L 418.465577 63.29178 
+z
+" style="fill:#272727;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_13">
+    <path clip-path="url(#p360b1503de)" d="M 472.5936 88.390004 
+Q 472.5936 109.408437 472.5936 129.085229 
+" style="fill:none;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+    <path clip-path="url(#p360b1503de)" d="M 474.5936 125.085229 
+L 472.5936 129.085229 
+L 470.5936 125.085229 
+L 474.5936 125.085229 
+z
+" style="fill:#272727;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_14">
+    <path clip-path="url(#p360b1503de)" d="M 423.806098 153.529785 
+Q 411.03304 153.529785 399.601623 153.529785 
+" style="fill:none;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+    <path clip-path="url(#p360b1503de)" d="M 403.601623 155.529785 
+L 399.601623 153.529785 
+L 403.601623 151.529785 
+L 403.601623 155.529785 
+z
+" style="fill:#272727;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_15">
+    <path clip-path="url(#p360b1503de)" d="M 300.686098 153.529785 
+Q 287.91304 153.529785 276.481623 153.529785 
+" style="fill:none;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+    <path clip-path="url(#p360b1503de)" d="M 280.481623 155.529785 
+L 276.481623 153.529785 
+L 280.481623 151.529785 
+L 280.481623 155.529785 
+z
+" style="fill:#272727;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_16">
+    <path clip-path="url(#p360b1503de)" d="M 177.566098 153.529785 
+Q 164.79304 153.529785 153.361623 153.529785 
+" style="fill:none;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+    <path clip-path="url(#p360b1503de)" d="M 157.361623 155.529785 
+L 153.361623 153.529785 
+L 157.361623 151.529785 
+L 157.361623 155.529785 
+z
+" style="fill:#272727;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+   </g>
+   <g id="patch_17">
+    <path clip-path="url(#p360b1503de)" d="M 103.933296 172.753674 
+Q 135.444701 89.556278 223.016377 86.498429 
+" style="fill:none;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+    <path clip-path="url(#p360b1503de)" d="M 218.949019 84.639235 
+L 223.016377 86.498429 
+L 219.088607 88.636799 
+L 218.949019 84.639235 
+z
+" style="fill:#272727;stroke:#272727;stroke-linecap:round;stroke-width:1.2;"/>
+   </g>
+   <g id="text_1">
+    <text style="font-family:Arial;font-size:9px;font-stretch:normal;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 7.2, 13.642031)" x="7.2" y="13.642031">a</text>
+   </g>
+   <g id="text_2">
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(74.021623 63.275611)">Programmed path</text>
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(77.165756 71.082277)">+ six task zones</text>
+   </g>
+   <g id="text_3">
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(204.037842 63.265004)">Hidden virtual</text>
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(209.517405 71.092885)">CNC plant</text>
+   </g>
+   <g id="text_4">
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(329.898194 63.318385)">Task state +</text>
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(328.580772 71.039504)">contour error</text>
+   </g>
+   <g id="text_5">
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(452.712506 63.275611)">Dual-anchor</text>
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(446.214936 70.99673)">zone scheduling</text>
+   </g>
+   <g id="text_6">
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(448.451131 151.513617)">Residual-delay</text>
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(455.959295 159.320282)">estimation</text>
+   </g>
+   <g id="text_7">
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(327.156131 151.470843)">Delay-aligned</text>
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(319.857842 159.277509)">nominal sensitivity</text>
+   </g>
+   <g id="text_8">
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(200.386131 151.513617)">Constrained QP</text>
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(191.359795 159.234735)">trust region + rollback</text>
+   </g>
+   <g id="text_9">
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(88.632459 151.55639)">Next-trial</text>
+    <text style="fill:#ffffff;font-family:Arial;font-size:7.3px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(73.008748 159.277509)">B-spline command</text>
+   </g>
+   <g id="text_10">
+    <text style="fill:#767676;font-family:Arial;font-size:7px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 292.8384, 30.019681)" x="292.8384" y="30.019681">trial k</text>
+   </g>
+   <g id="text_11">
+    <text style="fill:#767676;font-family:Arial;font-size:7px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:middle;" transform="rotate(-0, 105.696, 197.648788)" x="105.696" y="197.648788">trial k+1</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="text_12">
+    <text style="font-family:Arial;font-size:9px;font-stretch:normal;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 28.851373, 252.992949)" x="28.851373" y="252.992949">b</text>
+   </g>
+   <g id="text_13">
+    <text style="font-family:Arial;font-size:8px;font-stretch:normal;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 46.5984, 263.294454)" x="46.5984" y="263.294454">Information boundary</text>
+   </g>
+   <g id="text_14">
+    <text style="fill:#0f4d92;font-family:Arial;font-size:7px;font-stretch:normal;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 51.035157, 283.755441)" x="51.035157" y="283.755441">Learner-visible</text>
+   </g>
+   <g id="text_15">
+    <text style="font-family:Arial;font-size:6.8px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(51.035157 296.171611)">reference · feedback · task tolerances</text>
+    <text style="font-family:Arial;font-size:6.8px;font-stretch:normal;font-style:normal;font-weight:normal;" transform="translate(51.035157 303.363886)">nominal model · trial history · constraints</text>
+   </g>
+   <g id="text_16">
+    <text style="fill:#b64342;font-family:Arial;font-size:7px;font-stretch:normal;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 51.035157, 321.26725)" x="51.035157" y="321.26725">Hidden</text>
+   </g>
+   <g id="text_17">
+    <text style="font-family:Arial;font-size:6.5px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 90.965968, 321.26725)" x="90.965968" y="321.26725">plant parameters · noise-free truth · future delay</text>
+   </g>
+   <g id="text_18">
+    <text style="fill:#2e9e44;font-family:Arial;font-size:7px;font-stretch:normal;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 51.035157, 337.465531)" x="51.035157" y="337.465531">Learner output</text>
+   </g>
+   <g id="text_19">
+    <text style="font-family:Arial;font-size:6.5px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 106.494616, 337.465531)" x="106.494616" y="337.465531">next-trial B-spline command</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="line2d_1">
+    <defs>
+     <path d="M 0 1.75 
+C 0.464105 1.75 0.909265 1.565609 1.237437 1.237437 
+C 1.565609 0.909265 1.75 0.464105 1.75 0 
+C 1.75 -0.464105 1.565609 -0.909265 1.237437 -1.237437 
+C 0.909265 -1.565609 0.464105 -1.75 0 -1.75 
+C -0.464105 -1.75 -0.909265 -1.565609 -1.237437 -1.237437 
+C -1.565609 -0.909265 -1.75 -0.464105 -1.75 0 
+C -1.75 0.464105 -1.565609 0.909265 -1.237437 1.237437 
+C -0.909265 1.565609 -0.464105 1.75 0 1.75 
+z
+" id="mb8ed3c188a" style="stroke:#7884b4;"/>
+    </defs>
+    <g clip-path="url(#pc7c9e23da6)">
+     <use style="fill:#7884b4;stroke:#7884b4;" x="321.677319" xlink:href="#mb8ed3c188a" y="281.197817"/>
+    </g>
+   </g>
+   <g id="line2d_2">
+    <g clip-path="url(#pc7c9e23da6)">
+     <use style="fill:#7884b4;stroke:#7884b4;" x="321.677319" xlink:href="#mb8ed3c188a" y="293.133393"/>
+    </g>
+   </g>
+   <g id="line2d_3">
+    <g clip-path="url(#pc7c9e23da6)">
+     <use style="fill:#7884b4;stroke:#7884b4;" x="321.677319" xlink:href="#mb8ed3c188a" y="305.068969"/>
+    </g>
+   </g>
+   <g id="line2d_4">
+    <g clip-path="url(#pc7c9e23da6)">
+     <use style="fill:#7884b4;stroke:#7884b4;" x="321.677319" xlink:href="#mb8ed3c188a" y="317.004544"/>
+    </g>
+   </g>
+   <g id="line2d_5">
+    <g clip-path="url(#pc7c9e23da6)">
+     <use style="fill:#7884b4;stroke:#7884b4;" x="321.677319" xlink:href="#mb8ed3c188a" y="328.94012"/>
+    </g>
+   </g>
+   <g id="text_20">
+    <text style="font-family:Arial;font-size:9px;font-stretch:normal;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 299.493535, 252.992949)" x="299.493535" y="252.992949">c</text>
+   </g>
+   <g id="text_21">
+    <text style="font-family:Arial;font-size:8px;font-stretch:normal;font-style:normal;font-weight:bold;text-anchor:start;" transform="rotate(-0, 317.240562, 263.294454)" x="317.240562" y="263.294454">Inherited Task-Level ILC principles</text>
+   </g>
+   <g id="text_22">
+    <text style="font-family:Arial;font-size:6.8px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 330.550832, 282.955724)" x="330.550832" y="282.955724">task state, not axis error alone</text>
+   </g>
+   <g id="text_23">
+    <text style="font-family:Arial;font-size:6.8px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 330.550832, 294.851455)" x="330.550832" y="294.851455">sparse critical regions, not equal weighting</text>
+   </g>
+   <g id="text_24">
+    <text style="font-family:Arial;font-size:6.8px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 330.550832, 306.826875)" x="330.550832" y="306.826875">approximate model supplies local direction</text>
+   </g>
+   <g id="text_25">
+    <text style="font-family:Arial;font-size:6.8px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 330.550832, 318.803888)" x="330.550832" y="318.803888">repeated-trial feedback corrects mismatch</text>
+   </g>
+   <g id="text_26">
+    <text style="font-family:Arial;font-size:6.8px;font-stretch:normal;font-style:normal;font-weight:normal;text-anchor:start;" transform="rotate(-0, 330.550832, 330.739463)" x="330.550832" y="330.739463">low-dimensional constrained feedforward update</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p360b1503de">
+   <rect height="191.821751" width="492.48" x="46.5984" y="21.172778"/>
+  </clipPath>
+  <clipPath id="pc7c9e23da6">
+   <rect height="85.254111" width="221.837838" x="317.240562" y="257.326666"/>
+  </clipPath>
+ </defs>
+</svg>

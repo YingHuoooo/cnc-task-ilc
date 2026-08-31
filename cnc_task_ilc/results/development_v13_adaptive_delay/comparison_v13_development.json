@@ -1,0 +1,588 @@
+{
+  "classification": "V13_DEVELOPMENT_FAILED_FINAL_METHOD_V11",
+  "final_selected_method": "delay_aware_dual_anchor",
+  "formal_domain_seeds_reserved": [
+    2027,
+    2053,
+    2081,
+    2099
+  ],
+  "formal_domain_seeds_used": false,
+  "statistical_scope": "exploratory development statistics; not formal confirmation",
+  "comparisons": {
+    "balanced_static": {
+      "vs_fixed2": {
+        "scenario_id": "balanced_static",
+        "scope": "demand_conflict_development_only",
+        "proposed": "adaptive_rolling_delay",
+        "comparator": "fixed_delay_2",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": 3.5982383180173008,
+        "mean_task_auc_improvement_percent": 2.799979273057555,
+        "paired_win_rate": 0.7,
+        "bootstrap_median_improvement_95ci_percent": [
+          0.3057602381955445,
+          5.700535888772814
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.026584625244140625,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "vs_v11": {
+        "scenario_id": "balanced_static",
+        "scope": "demand_conflict_development_only",
+        "proposed": "adaptive_rolling_delay",
+        "comparator": "delay_aware_dual_anchor",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": 0.4702149741816388,
+        "mean_task_auc_improvement_percent": 0.2905967782506268,
+        "paired_win_rate": 0.65,
+        "bootstrap_median_improvement_95ci_percent": [
+          -0.13253817387710792,
+          1.290206588345904
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.10808372497558594,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "vs_original": {
+        "scenario_id": "balanced_static",
+        "scope": "demand_conflict_development_only",
+        "proposed": "adaptive_rolling_delay",
+        "comparator": "dual_anchor_dynamic",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": 3.154069468044398,
+        "mean_task_auc_improvement_percent": 2.0317477217369775,
+        "paired_win_rate": 0.75,
+        "bootstrap_median_improvement_95ci_percent": [
+          1.147377222589188,
+          5.498715223573148
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.0291290283203125,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "oracle_vs_fixed2": {
+        "scenario_id": "balanced_static",
+        "scope": "demand_conflict_development_only",
+        "proposed": "oracle_adaptive_delay",
+        "comparator": "fixed_delay_2",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": 3.7186599895025942,
+        "mean_task_auc_improvement_percent": 2.8372085837172185,
+        "paired_win_rate": 0.75,
+        "bootstrap_median_improvement_95ci_percent": [
+          0.599790909085756,
+          5.724077969374633
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.02422046661376953,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "oracle_vs_v11": {
+        "scenario_id": "balanced_static",
+        "scope": "demand_conflict_development_only",
+        "proposed": "oracle_adaptive_delay",
+        "comparator": "delay_aware_dual_anchor",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": 0.7386015363725684,
+        "mean_task_auc_improvement_percent": 0.31623612637077086,
+        "paired_win_rate": 0.65,
+        "bootstrap_median_improvement_95ci_percent": [
+          -0.28102131588903095,
+          1.3362750079592491
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.13054943084716797,
+        "inference_status": "exploratory_development_statistics"
+      }
+    },
+    "balanced_slow_drift": {
+      "vs_fixed2": {
+        "scenario_id": "balanced_slow_drift",
+        "scope": "demand_conflict_development_only",
+        "proposed": "adaptive_rolling_delay",
+        "comparator": "fixed_delay_2",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": 0.7675284949681284,
+        "mean_task_auc_improvement_percent": -0.694097795687652,
+        "paired_win_rate": 0.55,
+        "bootstrap_median_improvement_95ci_percent": [
+          -1.099562356711942,
+          1.62225963169442
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.22618770599365234,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "vs_v11": {
+        "scenario_id": "balanced_slow_drift",
+        "scope": "demand_conflict_development_only",
+        "proposed": "adaptive_rolling_delay",
+        "comparator": "delay_aware_dual_anchor",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": -0.3170954252779954,
+        "mean_task_auc_improvement_percent": -1.4005195266072916,
+        "paired_win_rate": 0.45,
+        "bootstrap_median_improvement_95ci_percent": [
+          -0.8850669370396553,
+          0.8560670095377569
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.9513463973999023,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "vs_original": {
+        "scenario_id": "balanced_slow_drift",
+        "scope": "demand_conflict_development_only",
+        "proposed": "adaptive_rolling_delay",
+        "comparator": "dual_anchor_dynamic",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": -0.42470512100642777,
+        "mean_task_auc_improvement_percent": -0.5671575282024838,
+        "paired_win_rate": 0.4,
+        "bootstrap_median_improvement_95ci_percent": [
+          -1.6550794342026884,
+          1.8735091198941114
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.8847436904907227,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "oracle_vs_fixed2": {
+        "scenario_id": "balanced_slow_drift",
+        "scope": "demand_conflict_development_only",
+        "proposed": "oracle_adaptive_delay",
+        "comparator": "fixed_delay_2",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": 0.32318135347258864,
+        "mean_task_auc_improvement_percent": -0.9126025265498878,
+        "paired_win_rate": 0.6,
+        "bootstrap_median_improvement_95ci_percent": [
+          -0.6191850723680197,
+          0.916664034326084
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.28529834747314453,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "oracle_vs_v11": {
+        "scenario_id": "balanced_slow_drift",
+        "scope": "demand_conflict_development_only",
+        "proposed": "oracle_adaptive_delay",
+        "comparator": "delay_aware_dual_anchor",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": -0.6995781164682032,
+        "mean_task_auc_improvement_percent": -1.6298115363311685,
+        "paired_win_rate": 0.4,
+        "bootstrap_median_improvement_95ci_percent": [
+          -1.3345185336884375,
+          0.7359962721478062
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.9836158752441406,
+        "inference_status": "exploratory_development_statistics"
+      }
+    },
+    "balanced_switch": {
+      "vs_fixed2": {
+        "scenario_id": "balanced_switch",
+        "scope": "demand_conflict_development_only",
+        "proposed": "adaptive_rolling_delay",
+        "comparator": "fixed_delay_2",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": 0.7335748422202132,
+        "mean_task_auc_improvement_percent": 1.0482179223642867,
+        "paired_win_rate": 0.65,
+        "bootstrap_median_improvement_95ci_percent": [
+          -0.14273272068140125,
+          1.3442618618432283
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.0027904510498046875,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "vs_v11": {
+        "scenario_id": "balanced_switch",
+        "scope": "demand_conflict_development_only",
+        "proposed": "adaptive_rolling_delay",
+        "comparator": "delay_aware_dual_anchor",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": -0.187900549112466,
+        "mean_task_auc_improvement_percent": -0.27058164919473693,
+        "paired_win_rate": 0.3,
+        "bootstrap_median_improvement_95ci_percent": [
+          -0.49046755880578186,
+          0.013643422681133178
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.9866790771484375,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "vs_original": {
+        "scenario_id": "balanced_switch",
+        "scope": "demand_conflict_development_only",
+        "proposed": "adaptive_rolling_delay",
+        "comparator": "dual_anchor_dynamic",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": -0.6930044742459456,
+        "mean_task_auc_improvement_percent": -0.8097335557523442,
+        "paired_win_rate": 0.3,
+        "bootstrap_median_improvement_95ci_percent": [
+          -1.405391238313085,
+          0.24454842422588371
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.9757795333862305,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "oracle_vs_fixed2": {
+        "scenario_id": "balanced_switch",
+        "scope": "demand_conflict_development_only",
+        "proposed": "oracle_adaptive_delay",
+        "comparator": "fixed_delay_2",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": 0.5858844715223552,
+        "mean_task_auc_improvement_percent": 0.9107002102314354,
+        "paired_win_rate": 0.65,
+        "bootstrap_median_improvement_95ci_percent": [
+          -0.10679759324227303,
+          1.0238843761874379
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.007656097412109375,
+        "inference_status": "exploratory_development_statistics"
+      },
+      "oracle_vs_v11": {
+        "scenario_id": "balanced_switch",
+        "scope": "demand_conflict_development_only",
+        "proposed": "oracle_adaptive_delay",
+        "comparator": "delay_aware_dual_anchor",
+        "paired_cases": 20,
+        "median_task_auc_improvement_percent": -0.31876592997215886,
+        "mean_task_auc_improvement_percent": -0.41283303952412254,
+        "paired_win_rate": 0.3,
+        "bootstrap_median_improvement_95ci_percent": [
+          -0.854113367656139,
+          0.012200791933738193
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.9931917190551758,
+        "inference_status": "exploratory_development_statistics"
+      }
+    }
+  },
+  "absolute_summary": [
+    {
+      "scenario_id": "balanced_static",
+      "method": "dual_anchor_dynamic",
+      "runs": 20,
+      "median_task_auc": 0.5336292577418977,
+      "median_final_task_ratio": 0.3797627382022774,
+      "median_final_global_ratio": 0.4023856706666748,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_static",
+      "method": "fixed_delay_2",
+      "runs": 20,
+      "median_task_auc": 0.5711610621314692,
+      "median_final_task_ratio": 0.4010608214052899,
+      "median_final_global_ratio": 0.39579129145126707,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_static",
+      "method": "delay_aware_dual_anchor",
+      "runs": 20,
+      "median_task_auc": 0.579084529299972,
+      "median_final_task_ratio": 0.40491250126594514,
+      "median_final_global_ratio": 0.39306784853998794,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_static",
+      "method": "adaptive_rolling_delay",
+      "runs": 20,
+      "median_task_auc": 0.5732629287924507,
+      "median_final_task_ratio": 0.4223464860904933,
+      "median_final_global_ratio": 0.3925588127411316,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_static",
+      "method": "oracle_adaptive_delay",
+      "runs": 20,
+      "median_task_auc": 0.5746890398921893,
+      "median_final_task_ratio": 0.4212916730438775,
+      "median_final_global_ratio": 0.3916784728118964,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_slow_drift",
+      "method": "dual_anchor_dynamic",
+      "runs": 20,
+      "median_task_auc": 0.5432375269951155,
+      "median_final_task_ratio": 0.34752247913343626,
+      "median_final_global_ratio": 0.3909954872484871,
+      "median_rejected_trials": 2.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_slow_drift",
+      "method": "fixed_delay_2",
+      "runs": 20,
+      "median_task_auc": 0.5620914557743284,
+      "median_final_task_ratio": 0.3617689959070016,
+      "median_final_global_ratio": 0.38203568755723327,
+      "median_rejected_trials": 2.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_slow_drift",
+      "method": "delay_aware_dual_anchor",
+      "runs": 20,
+      "median_task_auc": 0.5496254543045616,
+      "median_final_task_ratio": 0.34865878113949866,
+      "median_final_global_ratio": 0.3637236260105384,
+      "median_rejected_trials": 2.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_slow_drift",
+      "method": "adaptive_rolling_delay",
+      "runs": 20,
+      "median_task_auc": 0.5458410584783141,
+      "median_final_task_ratio": 0.35322325042284314,
+      "median_final_global_ratio": 0.36666878438744077,
+      "median_rejected_trials": 2.5,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_slow_drift",
+      "method": "oracle_adaptive_delay",
+      "runs": 20,
+      "median_task_auc": 0.5518031955721376,
+      "median_final_task_ratio": 0.3592058973792627,
+      "median_final_global_ratio": 0.37373438529710035,
+      "median_rejected_trials": 2.5,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_switch",
+      "method": "dual_anchor_dynamic",
+      "runs": 20,
+      "median_task_auc": 0.9324257928465922,
+      "median_final_task_ratio": 0.4362221519058691,
+      "median_final_global_ratio": 0.4856982156315244,
+      "median_rejected_trials": 3.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_switch",
+      "method": "fixed_delay_2",
+      "runs": 20,
+      "median_task_auc": 0.9835866417269191,
+      "median_final_task_ratio": 0.5096928655503017,
+      "median_final_global_ratio": 0.551445189021072,
+      "median_rejected_trials": 3.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_switch",
+      "method": "delay_aware_dual_anchor",
+      "runs": 20,
+      "median_task_auc": 0.9482389138462772,
+      "median_final_task_ratio": 0.47198403025365265,
+      "median_final_global_ratio": 0.536367820063009,
+      "median_rejected_trials": 3.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_switch",
+      "method": "adaptive_rolling_delay",
+      "runs": 20,
+      "median_task_auc": 0.9490348175535408,
+      "median_final_task_ratio": 0.4705021991718473,
+      "median_final_global_ratio": 0.532117791005035,
+      "median_rejected_trials": 3.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "balanced_switch",
+      "method": "oracle_adaptive_delay",
+      "runs": 20,
+      "median_task_auc": 0.9568086755090139,
+      "median_final_task_ratio": 0.47029875648500596,
+      "median_final_global_ratio": 0.5313619980939464,
+      "median_rejected_trials": 3.0,
+      "success_rate": 1.0
+    }
+  ],
+  "adaptive_diagnostics": {
+    "balanced_static": {
+      "runs": 20,
+      "median_axis_lag_absolute_error_steps": 0.5,
+      "median_peak_correlation": 0.9864983650990862,
+      "applied_lag_range_steps": [
+        0.17412117677431724,
+        3.5
+      ],
+      "confidence_range": [
+        0.5388467544171688,
+        0.9999122118479277
+      ],
+      "gain_range": [
+        0.17412117677431724,
+        0.37871979542040435
+      ],
+      "median_by_trial": {
+        "actual_axis_delay_steps": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "estimated_residual_lag_steps": [
+          5.5,
+          5.5,
+          5.5,
+          5.5,
+          5.5
+        ],
+        "applied_lag_steps": [
+          1.6497456889576285,
+          1.6531499788480102,
+          1.6552524830383968,
+          1.6589863386098616,
+          1.6614067196061504
+        ],
+        "confidence": [
+          0.9795728297520979,
+          0.9807672270236139,
+          0.9804185637414791,
+          0.9803470399740064,
+          0.9788642685354851
+        ],
+        "adaptive_gain": [
+          0.2607353158087597,
+          0.2611132764841759,
+          0.26133997984627466,
+          0.26175157294943857,
+          0.26201965527132837
+        ]
+      }
+    },
+    "balanced_slow_drift": {
+      "runs": 20,
+      "median_axis_lag_absolute_error_steps": 0.5,
+      "median_peak_correlation": 0.998050905601909,
+      "applied_lag_range_steps": [
+        0.1655091409587401,
+        3.5
+      ],
+      "confidence_range": [
+        0.472465268076,
+        0.9999109872686341
+      ],
+      "gain_range": [
+        0.1655091409587401,
+        0.3785701250335895
+      ],
+      "median_by_trial": {
+        "actual_axis_delay_steps": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "estimated_residual_lag_steps": [
+          6.0,
+          5.5,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "applied_lag_steps": [
+          1.949417394398219,
+          1.6790884785409734,
+          1.4547302959236506,
+          1.776014167472575,
+          1.8191971548357149
+        ],
+        "confidence": [
+          0.9796291091812497,
+          0.9813057351011187,
+          0.9830185339871131,
+          0.9822548077490567,
+          0.9821399347685662
+        ],
+        "adaptive_gain": [
+          0.2746207365405237,
+          0.2832408609783581,
+          0.27717277286333275,
+          0.2760611891379988,
+          0.2670168694099077
+        ]
+      }
+    },
+    "balanced_switch": {
+      "runs": 20,
+      "median_axis_lag_absolute_error_steps": 0.5,
+      "median_peak_correlation": 0.9932675683368969,
+      "applied_lag_range_steps": [
+        0.16482786070445718,
+        3.5
+      ],
+      "confidence_range": [
+        0.45840788239859265,
+        0.9999115513771718
+      ],
+      "gain_range": [
+        0.16482786070445718,
+        0.37863206546812433
+      ],
+      "median_by_trial": {
+        "actual_axis_delay_steps": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "estimated_residual_lag_steps": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "applied_lag_steps": [
+          1.949417394398219,
+          1.9697869597577282,
+          1.6965807338020422,
+          1.8127414663847135,
+          1.5924082620285382
+        ],
+        "confidence": [
+          0.9796291091812497,
+          0.9800441902544152,
+          0.9826346708175653,
+          0.9827944952930763,
+          0.980988311265522
+        ],
+        "adaptive_gain": [
+          0.2746207365405237,
+          0.2791227909495599,
+          0.2816289811298024,
+          0.2719519282066547,
+          0.24833317711611907
+        ]
+      }
+    }
+  },
+  "development_criteria": {
+    "each_scenario_median_improvement_vs_fixed2_above_zero": true,
+    "each_scenario_win_rate_vs_fixed2_at_least_60_percent": false,
+    "slow_and_switch_median_improvement_vs_v11_above_zero": false,
+    "slow_and_switch_win_rate_vs_v11_at_least_60_percent": false,
+    "static_noninferior_to_v11_within_one_percent": true,
+    "median_axis_lag_error_at_most_1p5_steps": true,
+    "each_median_oracle_excess_at_most_ten_percent": true,
+    "success_rate_at_least_95_percent": true
+  },
+  "development_passed": false,
+  "total_method_runs": 300
+}

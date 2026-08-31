@@ -1,0 +1,45 @@
+{
+  "taskset_id": "tolerance-conflict-v1",
+  "audit_only": true,
+  "audit_seeds": [
+    733,
+    751,
+    769
+  ],
+  "manifests_were_modified_after_audit": false,
+  "summary": [
+    {
+      "regime": "neutral",
+      "audit_cases": 15,
+      "identical_top2_rate": 1.0,
+      "selection_disagreement_rate": 0.0,
+      "mean_top2_jaccard": 1.0,
+      "median_rank_correlation": 1.0,
+      "median_initial_zone_violation_rate": 1.0
+    },
+    {
+      "regime": "demand_aligned",
+      "audit_cases": 15,
+      "identical_top2_rate": 0.7333333333333333,
+      "selection_disagreement_rate": 0.2666666666666667,
+      "mean_top2_jaccard": 0.8222222222222222,
+      "median_rank_correlation": 0.942857142857143,
+      "median_initial_zone_violation_rate": 1.0
+    },
+    {
+      "regime": "demand_conflict",
+      "audit_cases": 15,
+      "identical_top2_rate": 0.2,
+      "selection_disagreement_rate": 0.8,
+      "mean_top2_jaccard": 0.4444444444444445,
+      "median_rank_correlation": 0.7142857142857143,
+      "median_initial_zone_violation_rate": 1.0
+    }
+  ],
+  "readiness_criteria": {
+    "neutral_identical_top2_rate_at_least_95_percent": true,
+    "conflict_selection_disagreement_at_least_70_percent": true,
+    "conflict_mean_top2_jaccard_no_more_than_50_percent": true
+  },
+  "ready_for_formal_experiment": true
+}

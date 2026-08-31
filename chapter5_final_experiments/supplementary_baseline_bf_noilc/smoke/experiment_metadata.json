@@ -1,0 +1,20 @@
+{
+  "mode": "smoke",
+  "expected_method_runs": 2,
+  "expected_trial_rows": 10,
+  "expected_update_rows": 8,
+  "plant_seeds": [
+    26999
+  ],
+  "methods": [
+    "proposed",
+    "parameter_matched_constrained_bf_noilc"
+  ],
+  "scenario_ids": [
+    "n0_d0_m0"
+  ],
+  "python": "3.9.6 (v3.9.6:db3ff76da1, Jun 28 2021, 11:49:53) \n[Clang 6.0 (clang-600.0.57)]",
+  "platform": "macOS-26.1-x86_64-i386-64bit",
+  "numpy": "2.0.2",
+  "elapsed_s_this_invocation": 0.5626872499999998
+}

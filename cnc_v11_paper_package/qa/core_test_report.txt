@@ -1,0 +1,25 @@
+Command:
+  cd /Users/mar555/Desktop/sict/Doctor/2026/07/cnc_task_ilc
+  env PYTHONPATH=src /opt/anaconda3/bin/python3 -m unittest discover -s tests -v
+Interpreter:
+  /opt/anaconda3/bin/python3 (Python 3.8.8)
+
+Result:
+  Ran 40 tests in 8.381 s
+  Status: OK
+
+Coverage represented by the passing suite:
+  - five reference-trajectory families and geometry validity
+  - B-spline endpoint and nominal-sensitivity properties
+  - virtual-machine nonzero-error behavior
+  - sparse task-zone selection and equal active-zone budgets
+  - feedback-independent semantic/conflict task manifests
+  - dual-anchor scheduling, trust limits and rollback behavior
+  - V9 stress-factor isolation and noise-free scoring
+  - V10 full factorial completeness and seed isolation
+  - V11 delay estimation, fractional sensitivity alignment and frozen protocol
+  - V12/V13 bounded schedules, safe short runs and unused formal seeds
+
+Scope note:
+  This is a numerical-software regression test. LinuxCNC and physical-machine
+  interfaces were not invoked.

@@ -1,0 +1,186 @@
+{
+  "stage": "v11_fractional_compensation_gain_development_only",
+  "development_domain_seeds": [
+    1523,
+    1549,
+    1571
+  ],
+  "scenarios": [
+    "n0_d1_m0",
+    "n1_d1_m1"
+  ],
+  "method_specs": [
+    [
+      "dual_anchor_dynamic",
+      "dual_anchor_dynamic",
+      0.0
+    ],
+    [
+      "fixed_delay_dual_anchor",
+      "fixed_delay_dual_anchor",
+      1.0
+    ],
+    [
+      "delay_aware_gain_0p25",
+      "delay_aware_dual_anchor",
+      0.25
+    ],
+    [
+      "delay_aware_gain_0p5",
+      "delay_aware_dual_anchor",
+      0.5
+    ],
+    [
+      "delay_aware_gain_0p75",
+      "delay_aware_dual_anchor",
+      0.75
+    ],
+    [
+      "delay_aware_gain_1p0",
+      "delay_aware_dual_anchor",
+      1.0
+    ]
+  ],
+  "candidate_selection_rule": "maximize worst-scenario median AUC improvement, then worst-scenario win rate, then prefer smaller gain",
+  "selected_method_label": "delay_aware_gain_0p25",
+  "selected_compensation_gain": 0.25,
+  "screening_thresholds": {
+    "per_scenario_conflict_median_improvement_above_percent": 0.0,
+    "per_scenario_conflict_win_rate_at_least": 0.6,
+    "solver_and_constraint_success_rate_at_least": 0.95,
+    "median_axis_lag_absolute_error_at_most_steps": 2.0
+  },
+  "comparisons": {
+    "n0_d1_m0": {
+      "scenario_id": "n0_d1_m0",
+      "scope": "demand_conflict",
+      "comparator": "dual_anchor_dynamic",
+      "proposed": "delay_aware_gain_0p25",
+      "paired_cases": 15,
+      "median_task_auc_improvement_percent": 7.4115650901461345,
+      "mean_task_auc_improvement_percent": 6.979549266872156,
+      "strict_win_rate": 1.0,
+      "tie_rate": 0.0
+    },
+    "n1_d1_m1": {
+      "scenario_id": "n1_d1_m1",
+      "scope": "demand_conflict",
+      "comparator": "dual_anchor_dynamic",
+      "proposed": "delay_aware_gain_0p25",
+      "paired_cases": 15,
+      "median_task_auc_improvement_percent": 7.5189545480904485,
+      "mean_task_auc_improvement_percent": 7.11187238618755,
+      "strict_win_rate": 1.0,
+      "tie_rate": 0.0
+    }
+  },
+  "all_candidate_comparisons": {
+    "delay_aware_gain_0p25": {
+      "n0_d1_m0": {
+        "scenario_id": "n0_d1_m0",
+        "scope": "demand_conflict",
+        "comparator": "dual_anchor_dynamic",
+        "proposed": "delay_aware_gain_0p25",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": 7.4115650901461345,
+        "mean_task_auc_improvement_percent": 6.979549266872156,
+        "strict_win_rate": 1.0,
+        "tie_rate": 0.0
+      },
+      "n1_d1_m1": {
+        "scenario_id": "n1_d1_m1",
+        "scope": "demand_conflict",
+        "comparator": "dual_anchor_dynamic",
+        "proposed": "delay_aware_gain_0p25",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": 7.5189545480904485,
+        "mean_task_auc_improvement_percent": 7.11187238618755,
+        "strict_win_rate": 1.0,
+        "tie_rate": 0.0
+      }
+    },
+    "delay_aware_gain_0p5": {
+      "n0_d1_m0": {
+        "scenario_id": "n0_d1_m0",
+        "scope": "demand_conflict",
+        "comparator": "dual_anchor_dynamic",
+        "proposed": "delay_aware_gain_0p5",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": 7.3357975670863285,
+        "mean_task_auc_improvement_percent": 6.919037130377382,
+        "strict_win_rate": 0.9333333333333333,
+        "tie_rate": 0.0
+      },
+      "n1_d1_m1": {
+        "scenario_id": "n1_d1_m1",
+        "scope": "demand_conflict",
+        "comparator": "dual_anchor_dynamic",
+        "proposed": "delay_aware_gain_0p5",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": 7.5722225937903,
+        "mean_task_auc_improvement_percent": 8.757487226248207,
+        "strict_win_rate": 1.0,
+        "tie_rate": 0.0
+      }
+    },
+    "delay_aware_gain_0p75": {
+      "n0_d1_m0": {
+        "scenario_id": "n0_d1_m0",
+        "scope": "demand_conflict",
+        "comparator": "dual_anchor_dynamic",
+        "proposed": "delay_aware_gain_0p75",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": 1.858227995464928,
+        "mean_task_auc_improvement_percent": 3.783961387224834,
+        "strict_win_rate": 0.7333333333333333,
+        "tie_rate": 0.0
+      },
+      "n1_d1_m1": {
+        "scenario_id": "n1_d1_m1",
+        "scope": "demand_conflict",
+        "comparator": "dual_anchor_dynamic",
+        "proposed": "delay_aware_gain_0p75",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": 1.816566237299994,
+        "mean_task_auc_improvement_percent": 6.67609992903775,
+        "strict_win_rate": 0.6666666666666666,
+        "tie_rate": 0.0
+      }
+    },
+    "delay_aware_gain_1p0": {
+      "n0_d1_m0": {
+        "scenario_id": "n0_d1_m0",
+        "scope": "demand_conflict",
+        "comparator": "dual_anchor_dynamic",
+        "proposed": "delay_aware_gain_1p0",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": -1.6685603885870375,
+        "mean_task_auc_improvement_percent": -1.508529552270503,
+        "strict_win_rate": 0.3333333333333333,
+        "tie_rate": 0.0
+      },
+      "n1_d1_m1": {
+        "scenario_id": "n1_d1_m1",
+        "scope": "demand_conflict",
+        "comparator": "dual_anchor_dynamic",
+        "proposed": "delay_aware_gain_1p0",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": 0.02919005428725153,
+        "mean_task_auc_improvement_percent": 3.4807289112121107,
+        "strict_win_rate": 0.5333333333333333,
+        "tie_rate": 0.0
+      }
+    }
+  },
+  "primary_success_rate": 1.0,
+  "median_axis_lag_absolute_error_steps": 0.5,
+  "criteria": {
+    "all_scenario_medians_above_zero": true,
+    "all_scenario_win_rates_at_least_60_percent": true,
+    "success_rate_at_least_95_percent": true,
+    "median_axis_lag_error_at_most_two_steps": true
+  },
+  "passed": true,
+  "decision": "FREEZE_AND_CONFIRM",
+  "total_method_runs": 180
+}

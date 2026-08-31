@@ -1,0 +1,9 @@
+order,module,role
+1,Programmed reference and six task zones,input
+2,Hidden virtual CNC plant,execution
+3,Task-state and contour-error measurement,feedback
+4,Dual-anchor task-zone scheduling,sparse allocation
+5,Axis residual-delay estimation,data correction
+6,Delay-aligned nominal sensitivity,hybrid model
+7,"Constrained QP, trust region and rollback",safe update
+8,Next-trial B-spline command,output

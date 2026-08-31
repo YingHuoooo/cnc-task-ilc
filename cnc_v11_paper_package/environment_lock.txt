@@ -1,0 +1,16 @@
+# Observed and verified build environment
+
+python==3.8.8
+python_executable==/opt/anaconda3/bin/python3
+numpy==1.22.3
+scipy==1.10.1
+matplotlib==3.3.4
+pillow==10.4.0
+
+# Scope
+# - The 40-test regression suite and paper-package build passed in this exact
+#   observed environment.
+# - This is an audit record, not a universal installation requirements file.
+# - The sibling cnc_task_ilc project metadata requests matplotlib>=3.4; a clean
+#   installation should satisfy that declaration and rerun visual QA.
+# - LinuxCNC was not installed or invoked.

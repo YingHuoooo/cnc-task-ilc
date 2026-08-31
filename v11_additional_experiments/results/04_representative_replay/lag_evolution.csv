@@ -1,0 +1,11 @@
+method,trial,total_x,total_y,nominal_x,nominal_y,residual_x,residual_y,applied_x,applied_y,accepted
+v11_full,0,8,11,2,2,6,9,1.5,2.25,1
+v11_full,1,9,11,2,2,7,9,1.625,2.25,1
+v11_full,2,9,11,2,2,7,9,1.75,2.25,1
+v11_full,3,9,11,2,2,7,9,1.75,2.25,1
+v11_full,4,9,11,2,2,7,9,1.75,2.25,1
+no_residual_alignment,0,8,11,2,2,6,9,0.0,0.0,1
+no_residual_alignment,1,9,11,2,2,7,9,0.0,0.0,1
+no_residual_alignment,2,9,11,2,2,7,9,0.0,0.0,1
+no_residual_alignment,3,9,11,2,2,7,9,0.0,0.0,1
+no_residual_alignment,4,9,11,2,2,7,9,0.0,0.0,1

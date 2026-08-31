@@ -1,0 +1,1376 @@
+{
+  "taskset_id": "tolerance-conflict-v1",
+  "schema_version": 1,
+  "description": "Feedback-independent CNC task manifests with neutral, program-demand-aligned and program-demand-conflict tolerances.",
+  "families": [
+    "harmonic_loop",
+    "ellipse",
+    "rounded_square",
+    "figure_eight",
+    "s_curve"
+  ],
+  "regimes": [
+    "neutral",
+    "demand_aligned",
+    "demand_conflict"
+  ],
+  "manifest_count": 15,
+  "zones_per_manifest": 6,
+  "construction_guarantees": {
+    "machine_feedback_used": false,
+    "measured_tracking_error_used": false,
+    "formal_confirmation_seeds_included": false
+  },
+  "manifests": [
+    {
+      "manifest_id": "harmonic_loop--neutral",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "harmonic_loop",
+      "regime": "neutral",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "neutral"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.2896226098201329,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 1,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.375,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.5673019988113294,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 2,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.45625,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.6632890131718594,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 3,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.575,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.7544279176842704,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 4,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.775,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.41083425717067584,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.32503209601543664,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.24
+        }
+      ]
+    },
+    {
+      "manifest_id": "harmonic_loop--demand_aligned",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "harmonic_loop",
+      "regime": "demand_aligned",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "demand_aligned"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.2896226098201329,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.46
+        },
+        {
+          "zone_index": 1,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.375,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.5673019988113294,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.22
+        },
+        {
+          "zone_index": 2,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.45625,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.6632890131718594,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.18
+        },
+        {
+          "zone_index": 3,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.575,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.7544279176842704,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.14
+        },
+        {
+          "zone_index": 4,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.775,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.41083425717067584,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.28
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.32503209601543664,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.36
+        }
+      ]
+    },
+    {
+      "manifest_id": "harmonic_loop--demand_conflict",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "harmonic_loop",
+      "regime": "demand_conflict",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "demand_conflict"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.2896226098201329,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.14
+        },
+        {
+          "zone_index": 1,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.375,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.5673019988113294,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.28
+        },
+        {
+          "zone_index": 2,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.45625,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.6632890131718594,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.36
+        },
+        {
+          "zone_index": 3,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.575,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.7544279176842704,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.46
+        },
+        {
+          "zone_index": 4,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.775,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.41083425717067584,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.22
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.32503209601543664,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.18
+        }
+      ]
+    },
+    {
+      "manifest_id": "ellipse--neutral",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "ellipse",
+      "regime": "neutral",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "neutral"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.5844048480866271,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 1,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.15,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.5605180679604678,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 2,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.3875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.6169303332754219,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 3,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.8149342321805378,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 4,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.58125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.6690260065902417,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.6198143342819411,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.24
+        }
+      ]
+    },
+    {
+      "manifest_id": "ellipse--demand_aligned",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "ellipse",
+      "regime": "demand_aligned",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "demand_aligned"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.5844048480866271,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.36
+        },
+        {
+          "zone_index": 1,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.15,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.5605180679604678,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.46
+        },
+        {
+          "zone_index": 2,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.3875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.6169303332754219,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.28
+        },
+        {
+          "zone_index": 3,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.8149342321805378,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.14
+        },
+        {
+          "zone_index": 4,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.58125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.6690260065902417,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.18
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.6198143342819411,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.22
+        }
+      ]
+    },
+    {
+      "manifest_id": "ellipse--demand_conflict",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "ellipse",
+      "regime": "demand_conflict",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "demand_conflict"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.5844048480866271,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.18
+        },
+        {
+          "zone_index": 1,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.15,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.5605180679604678,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.14
+        },
+        {
+          "zone_index": 2,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.3875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.6169303332754219,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.22
+        },
+        {
+          "zone_index": 3,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.8149342321805378,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.46
+        },
+        {
+          "zone_index": 4,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.58125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.6690260065902417,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.36
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.6198143342819411,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.28
+        }
+      ]
+    },
+    {
+      "manifest_id": "rounded_square--neutral",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "rounded_square",
+      "regime": "neutral",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "neutral"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.4450252012099329,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 1,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.3375,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.599639878893538,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 2,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.6591552546994451,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 3,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.58125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.5850186290440004,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 4,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.675,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.605811546270497,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.4804346874052387,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.24
+        }
+      ]
+    },
+    {
+      "manifest_id": "rounded_square--demand_aligned",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "rounded_square",
+      "regime": "demand_aligned",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "demand_aligned"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.4450252012099329,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.46
+        },
+        {
+          "zone_index": 1,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.3375,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.599639878893538,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.22
+        },
+        {
+          "zone_index": 2,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.6591552546994451,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.14
+        },
+        {
+          "zone_index": 3,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.58125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.5850186290440004,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.28
+        },
+        {
+          "zone_index": 4,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.675,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.605811546270497,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.18
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.4804346874052387,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.36
+        }
+      ]
+    },
+    {
+      "manifest_id": "rounded_square--demand_conflict",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "rounded_square",
+      "regime": "demand_conflict",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "demand_conflict"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.4450252012099329,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.14
+        },
+        {
+          "zone_index": 1,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.3375,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.599639878893538,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.28
+        },
+        {
+          "zone_index": 2,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.6591552546994451,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.46
+        },
+        {
+          "zone_index": 3,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.58125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.5850186290440004,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.22
+        },
+        {
+          "zone_index": 4,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.675,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.605811546270497,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.36
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.4804346874052387,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.18
+        }
+      ]
+    },
+    {
+      "manifest_id": "figure_eight--neutral",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "figure_eight",
+      "regime": "neutral",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "neutral"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.18540875400689807,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 1,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.325,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.6089987159499289,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 2,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.41875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.6417238573524844,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 3,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.6225398615841092,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 4,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.6,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.6997720511494456,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.22081824020223853,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.24
+        }
+      ]
+    },
+    {
+      "manifest_id": "figure_eight--demand_aligned",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "figure_eight",
+      "regime": "demand_aligned",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "demand_aligned"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.18540875400689807,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.46
+        },
+        {
+          "zone_index": 1,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.325,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.6089987159499289,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.28
+        },
+        {
+          "zone_index": 2,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.41875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.6417238573524844,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.18
+        },
+        {
+          "zone_index": 3,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.6225398615841092,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.22
+        },
+        {
+          "zone_index": 4,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.6,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.6997720511494456,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.14
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.22081824020223853,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.36
+        }
+      ]
+    },
+    {
+      "manifest_id": "figure_eight--demand_conflict",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "figure_eight",
+      "regime": "demand_conflict",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "demand_conflict"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.18540875400689807,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.14
+        },
+        {
+          "zone_index": 1,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.325,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.6089987159499289,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.22
+        },
+        {
+          "zone_index": 2,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.41875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.6417238573524844,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.36
+        },
+        {
+          "zone_index": 3,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.6225398615841092,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.28
+        },
+        {
+          "zone_index": 4,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.6,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.6997720511494456,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.46
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.22081824020223853,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.18
+        }
+      ]
+    },
+    {
+      "manifest_id": "s_curve--neutral",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "s_curve",
+      "regime": "neutral",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "neutral"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.19330783598637263,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 1,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.15,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.4051767351847843,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 2,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.4,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.7339266649081783,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 3,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.6524511537122853,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 4,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.58125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.7236254473392656,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.24
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.22871732218168095,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.24
+        }
+      ]
+    },
+    {
+      "manifest_id": "s_curve--demand_aligned",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "s_curve",
+      "regime": "demand_aligned",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "demand_aligned"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.19330783598637263,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.46
+        },
+        {
+          "zone_index": 1,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.15,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.4051767351847843,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.28
+        },
+        {
+          "zone_index": 2,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.4,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.7339266649081783,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.14
+        },
+        {
+          "zone_index": 3,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.6524511537122853,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.22
+        },
+        {
+          "zone_index": 4,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.58125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.7236254473392656,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.18
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.22871732218168095,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.36
+        }
+      ]
+    },
+    {
+      "manifest_id": "s_curve--demand_conflict",
+      "schema_version": 1,
+      "taskset_id": "tolerance-conflict-v1",
+      "trajectory_family": "s_curve",
+      "regime": "demand_conflict",
+      "reference_sampling": {
+        "samples": 161,
+        "duration_s": 6.0,
+        "control_points": 12
+      },
+      "construction": {
+        "uses_machine_feedback": false,
+        "uses_measured_tracking_error": false,
+        "demand_features": [
+          "programmed_curvature",
+          "programmed_jerk",
+          "nominal_model_control_sensitivity"
+        ],
+        "tolerance_assignment": "demand_conflict"
+      },
+      "zones": [
+        {
+          "zone_index": 0,
+          "name": "entry_datum",
+          "role": "entry_datum",
+          "center_phase": 0.06875,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program entry datum",
+          "program_demand_score": 0.19330783598637263,
+          "program_demand_rank": 6,
+          "tolerance_mm": 0.14
+        },
+        {
+          "zone_index": 1,
+          "name": "functional_extreme",
+          "role": "functional_extreme",
+          "center_phase": 0.15,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed radial extent",
+          "program_demand_score": 0.4051767351847843,
+          "program_demand_rank": 4,
+          "tolerance_mm": 0.22
+        },
+        {
+          "zone_index": 2,
+          "name": "blend_transition",
+          "role": "blend_transition",
+          "center_phase": 0.4,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature change",
+          "program_demand_score": 0.7339266649081783,
+          "program_demand_rank": 1,
+          "tolerance_mm": 0.46
+        },
+        {
+          "zone_index": 3,
+          "name": "motion_transition",
+          "role": "motion_transition",
+          "center_phase": 0.5,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed jerk",
+          "program_demand_score": 0.6524511537122853,
+          "program_demand_rank": 3,
+          "tolerance_mm": 0.28
+        },
+        {
+          "zone_index": 4,
+          "name": "curvature_feature",
+          "role": "curvature_feature",
+          "center_phase": 0.58125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "maximum programmed curvature",
+          "program_demand_score": 0.7236254473392656,
+          "program_demand_rank": 2,
+          "tolerance_mm": 0.36
+        },
+        {
+          "zone_index": 5,
+          "name": "exit_datum",
+          "role": "exit_datum",
+          "center_phase": 0.93125,
+          "half_width_phase": 0.03125,
+          "generation_rule": "program exit datum",
+          "program_demand_score": 0.22871732218168095,
+          "program_demand_rank": 5,
+          "tolerance_mm": 0.18
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "mode": "formal",
+  "expected_method_runs": 960,
+  "expected_trial_rows": 4800,
+  "expected_update_rows": 3840,
+  "plant_seeds": [
+    26001,
+    26002,
+    26003,
+    26004,
+    26005,
+    26006,
+    26007,
+    26008
+  ],
+  "methods": [
+    "proposed",
+    "parameter_matched_constrained_bf_noilc"
+  ],
+  "scenario_ids": [
+    "n0_d0_m0",
+    "delay_2",
+    "n0_d1_m0",
+    "n1_d1_m1"
+  ],
+  "python": "3.9.6 (v3.9.6:db3ff76da1, Jun 28 2021, 11:49:53) \n[Clang 6.0 (clang-600.0.57)]",
+  "platform": "macOS-26.1-x86_64-i386-64bit",
+  "numpy": "2.0.2",
+  "elapsed_s_this_invocation": 105.514661875
+}

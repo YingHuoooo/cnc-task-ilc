@@ -1,0 +1,44 @@
+{
+  "stage": "v10_numerical_audit_only",
+  "audit_domain_seeds": [
+    1409,
+    1417
+  ],
+  "taskset_sha256": "f2838bb56df7382ab7821c2140dbfd203108469ec529049d0b8263c6d05a51b9",
+  "scenarios": [
+    {
+      "scenario_id": "n0_d0_m0",
+      "label": "Baseline",
+      "factor": "factorial_combination",
+      "factor_level": 0.0,
+      "measurement_noise_std_mm": 0.0,
+      "extra_delay_steps": 0,
+      "mismatch_scale": 1.0
+    },
+    {
+      "scenario_id": "n1_d1_m1",
+      "label": "N=0.05 mm + D=+4 + M=1.70x",
+      "factor": "factorial_combination",
+      "factor_level": 3.0,
+      "measurement_noise_std_mm": 0.05,
+      "extra_delay_steps": 4,
+      "mismatch_scale": 1.7
+    }
+  ],
+  "methods": [
+    "full_trajectory",
+    "error_peak_dynamic",
+    "violation_safe",
+    "dual_anchor_dynamic"
+  ],
+  "total_method_runs": 80,
+  "finite_rate": 1.0,
+  "primary_success_rate": 1.0,
+  "criteria": {
+    "all_audit_results_finite": true,
+    "primary_success_rate_at_least_95_percent": true,
+    "baseline_and_extreme_cells_both_executed": true
+  },
+  "passed": true,
+  "decision": "FREEZE_FORMAL_PROTOCOL"
+}

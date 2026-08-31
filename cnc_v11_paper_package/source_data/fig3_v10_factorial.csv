@@ -1,0 +1,10 @@
+stage,scope,comparison,paired_n,median_improvement_percent,ci95_low_percent,ci95_high_percent,win_rate,status
+V10 formal,n1_d1_m1 demand_conflict,dual_anchor_dynamic vs error_peak_dynamic,20,0.266337,-0.536884,1.785593,0.65,unresolved
+V10 formal,n1_d1_m1 all tasks,dual_anchor_dynamic vs full_trajectory,60,2.015214,0.388738,4.190101,0.683333,confirmed
+V10 formal,factorial effect,noise,20,0.064464,-0.066237,0.224459,,factor estimate
+V10 formal,factorial effect,delay,20,41.440567,34.089202,60.07406,,AUC degradation
+V10 formal,factorial effect,mismatch,20,-1.676392,-3.860541,-0.011959,,factor estimate
+V10 formal,factorial effect,noise_x_delay,20,0.00507,-0.102215,0.196716,,factor estimate
+V10 formal,factorial effect,noise_x_mismatch,20,-0.026295,-0.166326,0.130303,,factor estimate
+V10 formal,factorial effect,delay_x_mismatch,20,-0.499232,-1.055122,0.891133,,factor estimate
+V10 formal,factorial effect,noise_x_delay_x_mismatch,20,0.025035,-0.044487,0.168614,,factor estimate

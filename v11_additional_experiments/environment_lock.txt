@@ -1,0 +1,14 @@
+Execution date: 2026-08-20
+Interpreter: /opt/anaconda3/bin/python3
+Python: 3.8.8
+NumPy: 1.22.3
+SciPy: 1.10.1
+Matplotlib: 3.3.4
+Pillow: 10.4.0
+Plotting backend: Python/Matplotlib Agg only
+Parallel workers: 4
+OMP_NUM_THREADS: 1
+OPENBLAS_NUM_THREADS: 1
+MKL_NUM_THREADS: 1
+LinuxCNC executed: no
+Physical machine executed: no

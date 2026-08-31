@@ -1,0 +1,99 @@
+{
+  "protocol_id": "supplementary-parameter-matched-constrained-bf-noilc-v1",
+  "frozen_before_formal_execution": true,
+  "freeze_date": "2026-08-21",
+  "status_at_creation": "NO_FORMAL_RESULTS_OBSERVED",
+  "evidence_role": "prospectively specified supplementary literature-based baseline comparison; separate from the original V11 formal protocol and Table 3",
+  "methods": {
+    "proposed": {
+      "label": "Proposed",
+      "learning_rate_alpha": 0.65,
+      "regularization_lambda": 0.003,
+      "smoothness_mu": 2e-08,
+      "task_selector": "dual anchor",
+      "task_weighting": "balanced selected-zone weighting",
+      "residual_delay_alignment": true,
+      "alignment_gain": 0.25,
+      "trust_region_and_rollback": true
+    },
+    "parameter_matched_constrained_bf_noilc": {
+      "label": "Parameter-matched constrained basis-function NOILC",
+      "description": "a literature-grounded norm-optimal ILC baseline adapted to the same basis and command constraints used in this study",
+      "learning_rate_alpha": 1.0,
+      "regularization_lambda": 0.003,
+      "smoothness_mu": 2e-08,
+      "parameter_matching_rationale": "hold optimizer regularization and smoothing fixed so the comparison does not introduce baseline-specific tuning after observing formal outcomes",
+      "trajectory_weighting": "identity over all 161 contour-error samples",
+      "basis": "endpoint-clamped cubic B-spline; 12 nominal control points and 20 active axis coefficients",
+      "nominal_sensitivity_alignment": "none",
+      "task_selector": "none",
+      "residual_delay_alignment": false,
+      "trust_region_and_rollback": false,
+      "hard_constraints": "same cumulative command-correction, velocity, acceleration, and coefficient bounds as Proposed"
+    }
+  },
+  "plants": {
+    "formal_seeds": [26001, 26002, 26003, 26004, 26005, 26006, 26007, 26008],
+    "seed_audit": "not used by prior development, formal, matched-ablation, parameter-sensitivity, or held-out-plant experiments",
+    "smoke_seed_excluded_from_analysis": 26999
+  },
+  "tasks": {
+    "families": 5,
+    "regimes": ["neutral", "demand_aligned", "demand_conflict"],
+    "task_count": 15,
+    "primary_scope": "five demand-conflict tasks",
+    "broader_scope": "all 15 tasks"
+  },
+  "scenarios": [
+    {"scenario_id": "n0_d0_m0", "label": "Baseline", "extra_delay_steps": 0, "measurement_noise_std_mm": 0.0, "mismatch_scale": 1.0},
+    {"scenario_id": "delay_2", "label": "Added delay +2", "extra_delay_steps": 2, "measurement_noise_std_mm": 0.0, "mismatch_scale": 1.0},
+    {"scenario_id": "n0_d1_m0", "label": "Added delay +4", "extra_delay_steps": 4, "measurement_noise_std_mm": 0.0, "mismatch_scale": 1.0},
+    {"scenario_id": "n1_d1_m1", "label": "Triple stress", "extra_delay_steps": 4, "measurement_noise_std_mm": 0.05, "mismatch_scale": 1.7}
+  ],
+  "sampling_and_budget": {
+    "samples": 161,
+    "duration_s": 6.0,
+    "executed_trials": 5,
+    "command_updates": 4,
+    "paired_cases_per_condition_demand_conflict": 40,
+    "paired_cases_per_condition_all_tasks": 120,
+    "total_method_runs": 960
+  },
+  "primary_metric": "normalized task-score AUC",
+  "secondary_metrics": [
+    "final task ratio",
+    "normalized global contour-RMSE AUC",
+    "final global-RMSE ratio",
+    "normalized worst-zone AUC",
+    "final worst-zone ratio",
+    "solver success",
+    "implemented-constraint success",
+    "runtime",
+    "per-update and cumulative ||Delta theta||_2",
+    "per-update and cumulative learned ||Delta u||_2",
+    "per-update and cumulative issued-command ||Delta u||_2 including rollback",
+    "final command-correction norm"
+  ],
+  "paired_effect_definition": "100*(BF_NOILC_AUC-Proposed_AUC)/BF_NOILC_AUC; positive favors Proposed",
+  "control_effort_definition": "100*(Proposed_effort-BF_NOILC_effort)/BF_NOILC_effort; positive means Proposed uses more effort",
+  "inference": {
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20260821,
+    "primary_interval": "hierarchical bootstrap resampling plants and then tasks within sampled plants",
+    "additional_intervals": ["paired-row bootstrap", "plant bootstrap"],
+    "superiority_rule": "median paired task-AUC effect > 0 and hierarchical 95% CI lower bound > 0",
+    "direction_only_rule": "median effect > 0 but hierarchical 95% CI crosses zero",
+    "no_equivalence_claim": true
+  },
+  "claim_boundary": "configuration-level comparison; observed differences are not attributed solely to selection, temporal alignment, alpha, or rollback",
+  "input_hashes_sha256": {
+    "task_manifests.json": "f2838bb56df7382ab7821c2140dbfd203108469ec529049d0b8263c6d05a51b9",
+    "cnc_task_ilc/ilc.py": "9c2f4da3a8bd6fd19f933b9779a6e33bd8ae55c41418a5ca00ec87a4acbfe583",
+    "cnc_task_ilc/delay_compensation_runner.py": "98ae8515b051ab77370b3c6d85a63bc61c8edae0ef25e434b6462d078520f",
+    "cnc_task_ilc/semantic_task_benchmark.py": "c553f8556491d53a663583a566f0985972ba00ca7417abf2c936a125acdd7c1a",
+    "cnc_task_ilc/robustness_runner.py": "858d57200f9c45caae69d607bd490623f63ecf745720079884125a8cfdebbb0c",
+    "cnc_task_ilc/plant.py": "f0cae741c78cb8e9ef43f1b1bf36d424df451783eedaee80d4d40e28e157c1e9",
+    "scripts/experiment_core.py": "f5b94b97bba9935763962f85ac5a4a45502831118c6b6fd9cffab267b7540348",
+    "scripts/run_experiment.py": "74bf77b2793a5a8867e2f6bad9ad63ebd104310255511a65ccabfa105017d57f"
+  }
+}

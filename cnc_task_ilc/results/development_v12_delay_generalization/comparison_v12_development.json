@@ -1,0 +1,316 @@
+{
+  "classification": "DEVELOPMENT_GATE_FAILED_NO_FORMAL_RUN",
+  "formal_domain_seeds_used": false,
+  "selected_best_fixed_method": "fixed_delay_2",
+  "comparisons": {
+    "unknown_static_0_8": {
+      "delay_aware_dual_anchor": {
+        "scenario_id": "unknown_static_0_8",
+        "scope": "demand_conflict",
+        "proposed": "delay_aware_dual_anchor",
+        "comparator": "fixed_delay_2",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": 0.369445123003437,
+        "mean_task_auc_improvement_percent": -0.32095669354838813,
+        "paired_win_rate": 0.6666666666666666,
+        "bootstrap_median_improvement_95ci_percent": [
+          -2.934854069728315,
+          1.6074017514106727
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.4234619140625
+      },
+      "oracle_true_delay_0p25": {
+        "scenario_id": "unknown_static_0_8",
+        "scope": "demand_conflict",
+        "proposed": "oracle_true_delay_0p25",
+        "comparator": "fixed_delay_2",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": -0.0399807212754623,
+        "mean_task_auc_improvement_percent": -0.46374145338426065,
+        "paired_win_rate": 0.4666666666666667,
+        "bootstrap_median_improvement_95ci_percent": [
+          -1.06867254521116,
+          1.2458525076819498
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.619232177734375
+      },
+      "dual_anchor_dynamic": {
+        "scenario_id": "unknown_static_0_8",
+        "scope": "demand_conflict",
+        "proposed": "delay_aware_dual_anchor",
+        "comparator": "dual_anchor_dynamic",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": 5.390241528384518,
+        "mean_task_auc_improvement_percent": 5.420715762084163,
+        "paired_win_rate": 0.7333333333333333,
+        "bootstrap_median_improvement_95ci_percent": [
+          1.1967321726645055,
+          11.172149448879601
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.005126953125
+      }
+    },
+    "unknown_drift_pm2": {
+      "delay_aware_dual_anchor": {
+        "scenario_id": "unknown_drift_pm2",
+        "scope": "demand_conflict",
+        "proposed": "delay_aware_dual_anchor",
+        "comparator": "fixed_delay_2",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": -0.25929606929721016,
+        "mean_task_auc_improvement_percent": -0.15502741335676695,
+        "paired_win_rate": 0.4666666666666667,
+        "bootstrap_median_improvement_95ci_percent": [
+          -1.2097449284850172,
+          1.6190260081906052
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.35986328125
+      },
+      "oracle_true_delay_0p25": {
+        "scenario_id": "unknown_drift_pm2",
+        "scope": "demand_conflict",
+        "proposed": "oracle_true_delay_0p25",
+        "comparator": "fixed_delay_2",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": 0.11476613545917495,
+        "mean_task_auc_improvement_percent": 0.13095604778655756,
+        "paired_win_rate": 0.5333333333333333,
+        "bootstrap_median_improvement_95ci_percent": [
+          -1.5247041293785437,
+          1.8479560779486066
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.3193359375
+      },
+      "dual_anchor_dynamic": {
+        "scenario_id": "unknown_drift_pm2",
+        "scope": "demand_conflict",
+        "proposed": "delay_aware_dual_anchor",
+        "comparator": "dual_anchor_dynamic",
+        "paired_cases": 15,
+        "median_task_auc_improvement_percent": 4.119236830323194,
+        "mean_task_auc_improvement_percent": 5.78866006536344,
+        "paired_win_rate": 0.9333333333333333,
+        "bootstrap_median_improvement_95ci_percent": [
+          1.2271865269097775,
+          6.534154239899671
+        ],
+        "one_sided_wilcoxon_p_proposed_lower": 0.000152587890625
+      }
+    }
+  },
+  "absolute_summary": [
+    {
+      "scenario_id": "unknown_static_0_8",
+      "method": "dual_anchor_dynamic",
+      "runs": 15,
+      "median_task_auc": 0.5433593487591155,
+      "median_final_task_ratio": 0.36731597247043785,
+      "median_final_global_ratio": 0.4616133232261526,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "unknown_static_0_8",
+      "method": "fixed_delay_2",
+      "runs": 15,
+      "median_task_auc": 0.5157872009063563,
+      "median_final_task_ratio": 0.3637622084285834,
+      "median_final_global_ratio": 0.4492871565923273,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "unknown_static_0_8",
+      "method": "fixed_delay_4",
+      "runs": 15,
+      "median_task_auc": 0.6232023363214092,
+      "median_final_task_ratio": 0.47592389109877903,
+      "median_final_global_ratio": 0.4776834259520894,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "unknown_static_0_8",
+      "method": "fixed_delay_6",
+      "runs": 15,
+      "median_task_auc": 0.7500292989500933,
+      "median_final_task_ratio": 0.6752091358660586,
+      "median_final_global_ratio": 0.6550846679236793,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "unknown_static_0_8",
+      "method": "delay_aware_dual_anchor",
+      "runs": 15,
+      "median_task_auc": 0.5138816502475319,
+      "median_final_task_ratio": 0.3786342772347723,
+      "median_final_global_ratio": 0.46719869837385447,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "unknown_static_0_8",
+      "method": "oracle_true_delay_0p25",
+      "runs": 15,
+      "median_task_auc": 0.5234089189716061,
+      "median_final_task_ratio": 0.3960877723078258,
+      "median_final_global_ratio": 0.4344754205156028,
+      "median_rejected_trials": 0.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "unknown_drift_pm2",
+      "method": "dual_anchor_dynamic",
+      "runs": 15,
+      "median_task_auc": 0.44434987464459996,
+      "median_final_task_ratio": 0.19003259074004264,
+      "median_final_global_ratio": 0.35048741043052334,
+      "median_rejected_trials": 1.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "unknown_drift_pm2",
+      "method": "fixed_delay_2",
+      "runs": 15,
+      "median_task_auc": 0.43988296087102263,
+      "median_final_task_ratio": 0.18242550165340038,
+      "median_final_global_ratio": 0.25588054419364825,
+      "median_rejected_trials": 1.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "unknown_drift_pm2",
+      "method": "fixed_delay_4",
+      "runs": 15,
+      "median_task_auc": 0.46904434840233156,
+      "median_final_task_ratio": 0.18806508207119924,
+      "median_final_global_ratio": 0.21372896883694809,
+      "median_rejected_trials": 1.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "unknown_drift_pm2",
+      "method": "fixed_delay_6",
+      "runs": 15,
+      "median_task_auc": 0.5676180185163142,
+      "median_final_task_ratio": 0.37031409444006097,
+      "median_final_global_ratio": 0.34053120641142226,
+      "median_rejected_trials": 1.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "unknown_drift_pm2",
+      "method": "delay_aware_dual_anchor",
+      "runs": 15,
+      "median_task_auc": 0.4428405030745031,
+      "median_final_task_ratio": 0.1741187423764044,
+      "median_final_global_ratio": 0.27395503156330947,
+      "median_rejected_trials": 1.0,
+      "success_rate": 1.0
+    },
+    {
+      "scenario_id": "unknown_drift_pm2",
+      "method": "oracle_true_delay_0p25",
+      "runs": 15,
+      "median_task_auc": 0.44322419242034483,
+      "median_final_task_ratio": 0.17130565077152857,
+      "median_final_global_ratio": 0.2695052763610523,
+      "median_rejected_trials": 1.0,
+      "success_rate": 1.0
+    }
+  ],
+  "delay_diagnostics": {
+    "unknown_static_0_8": {
+      "unique_domain_schedules": 3,
+      "actual_axis_delay_range_steps": [
+        7.0,
+        11.0
+      ],
+      "estimated_residual_lag_range_steps": [
+        6.0,
+        11.0
+      ],
+      "online_applied_lag_range_steps": [
+        1.5,
+        2.75
+      ],
+      "median_actual_axis_delay_steps": 8.5,
+      "median_estimated_residual_lag_steps": 7.5,
+      "median_online_applied_lag_steps": 1.875,
+      "median_by_trial": {
+        "actual_axis_delay_steps": [
+          8.5,
+          8.5,
+          8.5,
+          8.5,
+          8.5
+        ],
+        "estimated_residual_lag_steps": [
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "online_applied_lag_steps": [
+          1.875,
+          1.875,
+          1.875,
+          1.875,
+          1.875
+        ]
+      }
+    },
+    "unknown_drift_pm2": {
+      "unique_domain_schedules": 3,
+      "actual_axis_delay_range_steps": [
+        3.0,
+        9.0
+      ],
+      "estimated_residual_lag_range_steps": [
+        2.0,
+        8.0
+      ],
+      "online_applied_lag_range_steps": [
+        0.75,
+        2.0
+      ],
+      "median_actual_axis_delay_steps": 5.0,
+      "median_estimated_residual_lag_steps": 5.0,
+      "median_online_applied_lag_steps": 1.25,
+      "median_by_trial": {
+        "actual_axis_delay_steps": [
+          6.0,
+          5.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "estimated_residual_lag_steps": [
+          5.5,
+          4.5,
+          3.5,
+          4.5,
+          5.5
+        ],
+        "online_applied_lag_steps": [
+          1.375,
+          1.25,
+          1.125,
+          1.125,
+          1.125
+        ]
+      }
+    }
+  },
+  "development_criteria": {
+    "each_scenario_median_improvement_vs_best_fixed_above_zero": false,
+    "each_scenario_win_rate_vs_best_fixed_at_least_60_percent": false,
+    "median_axis_lag_error_at_most_one_step": true,
+    "worst_median_oracle_excess_at_most_ten_percent": true,
+    "success_rate_at_least_95_percent": true
+  },
+  "development_passed": false,
+  "total_method_runs": 180
+}

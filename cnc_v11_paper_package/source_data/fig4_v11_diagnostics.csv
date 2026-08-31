@@ -1,0 +1,7 @@
+panel,metric,value,unit
+c,delay_compensation_gain,0.25,fraction
+c,median_axis_lag_absolute_error,0.5,samples
+c,minimum_success_rate,1.0,fraction
+c,formal_method_runs,1200,runs
+c,formal_domains,4,domains
+c,formal_scenarios,4,scenarios
