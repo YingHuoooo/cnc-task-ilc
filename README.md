@@ -260,22 +260,6 @@ distributed as a release archive while retaining the SVG/PDF/PNG versions in
 Git. Do not remove raw CSV, JSON, JSONL, or NPZ files if full numerical
 traceability is required.
 
-## Scope
 
-This repository evaluates a repeated-contour learning method in a controlled
-numerical environment. It does not contain a real-time controller interface,
-G-code execution path, cutting experiment, physical metrology data, or an
-empirically identified population model of machine tools. The Latin-hypercube
-family is a predefined numerical uncertainty set.
 
-## Citation, authorship, and license
 
-Author names, the final paper title, DOI, and software license were not inferred
-during repository packaging. Before making the repository public, add:
-
-- a `CITATION.cff` file containing the final bibliographic metadata;
-- an explicit open-source license approved by all rights holders; and
-- the final paper or preprint link.
-
-Without an explicit license, GitHub publication does not grant reuse rights by
-default.
