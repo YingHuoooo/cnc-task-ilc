@@ -7,10 +7,6 @@ low-dimensional B-spline correction, semantic task zones, tolerance-normalized
 quality, a nominal contour-sensitivity model, residual effective-lag alignment,
 constrained updates, and rollback.
 
-The objective is task-level contour improvement under a deliberately mismatched
-nominal model. The method does **not** attempt to identify the hidden plant or
-recover a physical transport delay. All experiments in this repository use
-numerical virtual plants; no LinuxCNC controller or physical machine was used.
 
 ## What is included
 
